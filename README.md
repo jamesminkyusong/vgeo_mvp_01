@@ -142,9 +142,4 @@ python main/generate.py
 ```
 
 The script will:
-- Load the configuration from `main/generate_settings.ini`.
-- Write the report with given topic. The topic should match the data collection topic.
-- Generate scenario sections based on the main report.
-- Save the final output as a CSV file named with a timestamp and other metadata.
-
-### Sample Queries
+- Generate and save the report into the specified EXPORT PATH
