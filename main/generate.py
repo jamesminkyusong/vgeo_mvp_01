@@ -1,14 +1,31 @@
 import os
 import sys
-# project_root = os.path.abspath(os.path.join(os.getcwd(), '..', '..'))
-# sys.path.append(project_root)
 import asyncio
+import configparser
+from datetime import datetime
+
 from dataclasses import dataclass, field
 from typing import List, Tuple
-
-# Import LLM related classes (assumed available from your LangChain setup)
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
+
+def load_configs():
+    config = configparser.ConfigParser()
+    config.read('main/settings.ini')
+    os.environ['TAVILY_API_KEY']= config['API_KEYS']['TAVILY_KEY'].strip()
+    os.environ['OPENAI_API_KEY']= config['API_KEYS']['OPENAI_API_KEY'].strip()
+    os.environ['GOOGLE_API_KEY']= config['API_KEYS']['GOOGLE_API_KEY'].strip()
+
+    os.environ['ZILLIZ_CLOUD_URI']= config['API_KEYS']['ZILLIZ_CLOUD_URI'].strip()
+    os.environ['ZILLIZ_CLOUD_USERNAME']= config['API_KEYS']['ZILLIZ_CLOUD_USERNAME'].strip()
+    os.environ['ZILLIZ_CLOUD_PASSWORD']= config['API_KEYS']['ZILLIZ_CLOUD_PASSWORD'].strip()
+    os.environ['ZILLIZ_CLOUD_API_KEY']= config['API_KEYS']['ZILLIZ_CLOUD_API_KEY'].strip()
+    user_topic = config['INPUT']['TOPIC'].strip()
+    output_path = config['OUTPUT']['OUT_PATH'].strip()
+
+    return user_topic, output_path
+
+user_topic, output_path = load_configs()    
 
 # Import Tavily utilities from your existing utils.py file
 from vgeo.generate.src.utils import (
@@ -24,16 +41,34 @@ from vgeo.generate.src.prompts import (
     intro_section_writer_instructions,
     concl_section_writer_instructions,
     scenario_title_generation_instructions,
-    scenario_section_instruction
-
+    scenario_section_instruction_1,
+    scenario_section_instruction_2,
 )
 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Milvus
 from pydantic import BaseModel, Field
+
+#  -----------------------
+# Configuration and Data Models
 # -----------------------
-# Define Pydantic models for structured scenario output
-# -----------------------
+
+
+
+
+@dataclass
+class Config:
+    topic: str
+    model_name: str = "gpt-4o"        # LLM model name
+    tavily_topic: str = "news"        # For Tavily searches (news or general)
+    tavily_days: int = 7              # Number of days to look back in retrieval
+    number_of_queries: int = 2        # Number of search queries to generate per section
+    number_of_scenarios: int = 3
+
+@dataclass
+class Paragraph:
+    title: str
+    content: str = ""
 
 
 class Scenario(BaseModel):
@@ -50,23 +85,6 @@ class Queries(BaseModel):
         description="List of search queries."
     )
 
-# -----------------------
-# Configuration and Data Models
-# -----------------------
-
-@dataclass
-class Config:
-    topic: str
-    model_name: str = "gpt-4o"        # LLM model name
-    tavily_topic: str = "news"        # For Tavily searches (news or general)
-    tavily_days: int = 7              # Number of days to look back in retrieval
-    number_of_queries: int = 2        # Number of search queries to generate per section
-    number_of_scenarios: int = 3
-
-@dataclass
-class Paragraph:
-    title: str
-    content: str = ""
 
 @dataclass
 class Report:
@@ -92,7 +110,7 @@ class Report:
         #     report_text += "\n\n" + works_cited
         if self.scenarios:
             scenarios_text = "\n\n".join(f"{s.title}\n{s.content}" for s in self.scenarios)
-            report_text += "\n\n" + "Scenario Sections:\n" + scenarios_text
+            report_text += "\n\n" + scenarios_text
         return report_text
 
 
@@ -199,35 +217,47 @@ def generate_scenario_titles(report_context: str, main_topic: str, llm: ChatOpen
     return titles
 
 async def generate_scenario_section(scenario_title: str, report_context: str, main_topic: str, llm: ChatOpenAI, config: Config) -> str:
-    """
-    Generates a scenario section using the scenario_section_instruction prompt.
-    """
-    # Generate dynamic search queries for the scenario using structured output.
-    queries = generate_search_queries(scenario_title, main_topic, config.number_of_queries, llm)
+    # Generate scenario-specific search queries using the scenario title.
+    scenario_queries = generate_search_queries(scenario_title, main_topic, config.number_of_queries, llm)
     
-    # Perform asynchronous Tavily search with the generated queries.
-    tavily_responses = await tavily_search_async(queries, config.tavily_topic, config.tavily_days)
-    # Deduplicate and format the Tavily search results to obtain a single context string.
-    retrieved_context, _ = deduplicate_and_format_sources(tavily_responses, max_tokens_per_source=1000, include_raw_content=True)
-    # Combine the main report context with the retrieved Tavily context.
-    combined_context = report_context + "\n\n" + retrieved_context
+    # Perform asynchronous Tavily search for scenario queries.
+    try:
+        tavily_responses = await tavily_search_async(scenario_queries, config.tavily_topic, config.tavily_days)
+        scenario_tavily_context, _ = deduplicate_and_format_sources(tavily_responses, max_tokens_per_source=1000, include_raw_content=True)
+    except Exception as e:
+        print(f"Error during Tavily retrieval for scenario: {e}")
+        scenario_tavily_context = ""
     
-    # Format the scenario section prompt with the scenario title, main topic, and the combined context.
-    prompt = scenario_section_instruction.format(
+    # Combine contexts: include the main report context and the scenario-specific Tavily context as separate sections.
+    combined_context = f"Main Report Context:\n{report_context}\n\nScenario Tavily Context:\n{scenario_tavily_context}"
+    
+    # Step 1: Generate the initial part of the scenario section.
+    part1_prompt = scenario_section_instruction_1.format(
         scenario_title=scenario_title,
         main_topic=main_topic,
-        context=combined_context
+        context=scenario_tavily_context
     )
+    part1 = generate_paragraph(part1_prompt, llm)
     
-    # Generate and return the scenario section using the LLM.
-    return generate_paragraph(prompt, llm)
+    # Step 2: Generate the Risk & Opportunity Analysis portion using Part 1 as context.
+    part2_prompt = scenario_section_instruction_2.format(
+        scenario_title=scenario_title,
+        main_topic=main_topic,
+        previous_section=part1,  # Pass the previously generated text
+        context = scenario_tavily_context
+    )
+    part2 = generate_paragraph(part2_prompt, llm)
+    
+    return part1 + "\n\n" + part2
+
+
 
 # -----------------------
 # Main Execution Flow (Asynchronous)
 # -----------------------
 
 async def main():
-    config = Config(topic="France and Germany's nuclear defense strategy and its geopolitcal ramifications")
+    config = Config(topic=user_topic)
     
     # Initialize LLM model.
     llm = ChatOpenAI(model=config.model_name, temperature=0)
@@ -255,25 +285,25 @@ async def main():
     report.add_paragraph(Paragraph(title="", content=conclusion_content))
     
     main_report_text = report.compile()
-    print("=== Main Report ===")
-    print(main_report_text)
     
     # Generate scenario titles using structured_llm.invoke.
     scenario_titles = generate_scenario_titles(main_topic = config.topic, report_context= main_report_text, llm= llm)
-    print("Generated Scenario Titles:")
-    for title in scenario_titles:
-        print("-", title)
-    
     # For each scenario, generate a scenario section and add it to the report.
     for scenario_title in scenario_titles:
-        scenario_content = generate_scenario_section(scenario_title, main_report_text, config.topic, llm)
-        report.add_scenario(Paragraph(title=f"Scenario: {scenario_title}", content=scenario_content))
+        scenario_content = await generate_scenario_section(scenario_title, main_report_text, config.topic, llm, config)
+        report.add_scenario(Paragraph(title=f"## {scenario_title}", content=scenario_content))
     
     # Re-compile the report with scenario sections appended.
     final_report = report.compile()
     print("\n=== Final Report with Scenarios ===")
     print(final_report)
+    return final_report
 
-# Run the asynchronous main flow.
 if __name__ == "__main__":
-    asyncio.run(main())
+    report = asyncio.run(main())
+    today_string = datetime.today().strftime('%y%m%d%H%M')
+    filename = f"{today_string}_final_report.md"
+
+    # Write the final report string to the Markdown file.
+    with open(os.path.join(output_path, filename), "w", encoding="utf-8") as f:
+        f.write(report)

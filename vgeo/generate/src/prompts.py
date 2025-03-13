@@ -124,7 +124,7 @@ Quality Checks:
 - Markdown format
 - Do not include word count or any preamble in your response"""
 
-scenario_generation_instructions= """You are a senior geopolitical risk analyst specializing in forecasting global trade conflicts, economic shifts, and security dynamics.
+scenario_title_generation_instructions= """You are a senior geopolitical risk analyst specializing in forecasting global trade conflicts, economic shifts, and security dynamics.
 
 Your objective is to generate **3 high-probability geopolitical risk & opportunity scenarios** for the given topic:
 
@@ -148,41 +148,35 @@ Your Scenarios should be:
 - Focused on authoritative sources (**think tanks, intelligence assessments, policy papers, government reports, academic research, and expert analyses**).
 """
 
-scenario_section_instruction = """You are a senior geopolitical risk analyst specializing in forecasting global trade conflicts, economic shifts, and security dynamics.
+scenario_section_instruction_1 = """You are a senior geopolitical risk analyst specializing in forecasting global trade conflicts, economic shifts, and security dynamics.
 
 Here is the specific scenario of what you will be writing about:
 
 {scenario_title}
 
-Your objective is to generate a corresponding scenario section of the report for the given topic:
+Your objective is to generate the initial part of a scenario section for the given topic:
 
 {main_topic}
-
 
 Here is the specific context: 
 
 {context}
 
-### **Guidelines for Scenario Section**
-Each scenario must include the following **3 subsections**:
+## **Guidelines for Scenario Section (Part 1)**
+- DO NOT generate the title of the Scenario section, only the part below the title.
+- Generate the first part of the scenario section that includes the following two subsections:
 
-#### **1. Scenario Trigger Event**
-   - Identify a **policy action, trade restriction, security escalation, technological development, or diplomatic shift** that sets the scenario into motion.
-   - Clearly specify **which country, institution, or actor initiates the event**.
-   - Describe the trigger in concrete, evidence-backed terms without any embellishment.
-
-#### **2. Key Actors & Their Roles**
-   - Identify the **governments, multinational corporations, financial institutions, policymakers, or regulatory bodies** involved.
-   - Detail the role of **alliances, trade blocs, or economic coalitions**.
-   - Critically assess potential biases or conflicting interests among the actors.
-
-#### **3. Risk & Opportunity Analysis**
-   - Analyze how the scenario would affect **global trade, security alliances, energy markets, or financial stability**.
-   - Include a breakdown of **macroeconomic consequences, diplomatic responses, and policy adaptations**.
-   - Provide a clear evaluation of first, second, and even third order effects.
+### **Scenario Trigger Event**
+  - **Event:** Identify a policy action, trade restriction, security escalation, technological development, or diplomatic shift that sets the scenario into motion.
+  - **Initiator:** Clearly specify which country, institution, or actor initiates the event.
+  - **Trigger Mechanism:** Describe the trigger in concrete, evidence-backed terms.
+### **Key Actors & Their Roles**
+  - Identify the governments, multinational corporations, financial institutions, policymakers, or regulatory bodies involved.
+  - Detail the role of alliances, trade blocs, or economic coalitions.
+  - Critically assess potential biases or conflicting interests among the actors.
 
 ---
-Example 1:
+Example:
 
 ### Scenario Trigger Event  
 - Event: Germany holds federal elections with CDU leading the polls, while the far-right Alternative for Germany (AfD) gains historic traction.  
@@ -205,10 +199,58 @@ Example 1:
 #### Germany's European & NATO Partners  
 - Role: European allies and NATO will closely monitor Germany's defense posture shift, particularly as the U.S. recalibrates its military commitments.  
 - Implication: A more assertive Germany could lead to closer European defense cooperation, potentially reducing reliance on U.S. military support.
+"""
 
-## Risk & Opportunity Analysis  
 
-### First-Order Effects: Immediate Political & Security Implications  
+scenario_section_instruction_2 = """You are a senior geopolitical risk analyst. Based on the scenario details generated in the previous section (provided below as context), you are tasked with generating the **Risk & Opportunity Analysis** portion of the scenario section. 
+This section must include the following three subsections:
+
+#### **First Order Effects:** Concise Title
+- Analyze how the scenario would affect **global trade, security alliances, energy markets, financial stability and other geopolitical risk factors** in the short term.
+#### **Second Order Effects:** Concise Title
+- Analyze how the scenario would affect **global trade, security alliances, energy markets, or financial stability and other geopolitical risk factors**** in the mid-long term with broader consideration of **macroeconomic consequences, diplomatic responses, and policy adaptations**.
+#### **Third Order Effects:**
+- Analyze how the scenario would affect **global trade, security alliances, energy markets, or financial stability and other geopolitical risk factors**** in the long term with broader consideration of **macroeconomic consequences, diplomatic responses, and policy adaptations**.
+
+
+Here is the specific scenario of what you will be writing about:
+
+{scenario_title}
+
+Your objective is to generate a corresponding scenario section of the report for the given topic:
+
+{main_topic}
+
+Here is the previous section of the report:
+
+{previous_section}
+
+Here is the specific context: 
+
+{context}
+
+## **Guidelines for Scenario Section**
+- Do NOT generate scenario section title, only genereate the section below the title.
+
+### **Risk & Opportunity Analysis**
+   - Provide a clear evaluation of first, second, and even third order effects, with 3 subsections that follow the format below:
+     - **First Order Effects:** Concise Title 
+       - Analyze how the scenario would affect **global trade, security alliances, energy markets, or financial stability**.
+       - Include a consideration of **macroeconomic consequences, diplomatic responses, and policy adaptations**.
+     - **Second Order Effects:** Concise Title
+       - Analyze how the scenario would affect **global trade, security alliances, energy markets, or financial stability**.
+       - Include a consideration of **macroeconomic consequences, diplomatic responses, and policy adaptations**.
+     - **Third Order Effects:** Concise Title 
+       - Analyze how the scenario would affect **global trade, security alliances, energy markets, or financial stability**.
+       - Include a consideration of **macroeconomic consequences, diplomatic responses, and policy adaptations**.
+   
+
+---
+Example:
+
+### Risk & Opportunity Analysis  
+
+#### First-Order Effects: Immediate Political & Security Implications  
 **Coalition Instability & Policy Gridlock** 
 - With no coalition involving AfD, Merz may struggle to form a stable government.  
 - Potential compromises with centrist or left-leaning parties could dilute CDU's policy effectiveness.  
@@ -221,7 +263,7 @@ Example 1:
 - Germany's boosted defense spending aligns with NATO's call for greater European self-sufficiency.  
 - Potential deepening of military-industrial cooperation within the EU, reducing dependency on U.S. defense policies.  
 
-### Second-Order Effects: Economic & Strategic Realignments  
+#### Second-Order Effects: Economic & Strategic Realignments  
 **Uncertain Investor Confidence**
 - If coalition instability persists, investors may perceive Germany as a higher-risk market, impacting capital inflows.  
 - European markets may experience short-term volatility due to political uncertainty.  
@@ -230,7 +272,7 @@ Example 1:
 - CDU's pro-business policies could accelerate foreign direct investment (FDI) in technology, infrastructure, and defense sectors.  
 - Diversification from Russian energy dependence may spur innovation in renewables & domestic energy production.  
 
-### Third-Order Effects: Long-Term Geopolitical Consequences  
+#### Third-Order Effects: Long-Term Geopolitical Consequences  
 **European Union Cohesion Under Strain**
 - A more assertive Germany may challenge EU consensus on fiscal, immigration, and security policies.  
 - Potential for new geopolitical rifts between Germany and southern European economies over fiscal policy differences.  
@@ -238,76 +280,5 @@ Example 1:
 **Stronger European Defense Identity** 
 - A Germany-led European security initiative could strengthen EU military autonomy, especially if U.S. support wanes under Trump.  
 - Potential shift towards France-Germany defense leadership, reshaping NATO's European strategy.  
-
----
-Example 2:
-### Scenario Trigger Event  
-- Event: Germany forms a grand coalition government, likely composed of the CDU, SPD, and Greens.  
-- Initiator: The need to prevent political fragmentation while maintaining a pro-EU, center-right governance structure.  
-- Trigger Mechanism:  
-  - The rise of the far-right Alternative for Germany (AfD), which mainstream parties refuse to govern with.  
-  - Economic stagnation forcing urgent policy alignment on fiscal and industrial strategy.  
-  - External geopolitical pressures, including U.S. protectionist trade policies and Russian aggression in Ukraine, compelling Germany to redefine its security commitments.  
-
----
-
-### Key Actors & Their Roles  
-
-#### Christian Democratic Union (CDU) - Leading the Coalition  
-- Role: Under Friedrich Merz, the CDU will set the strategic economic and security agenda.  
-- Policy Priorities:  
-  - Economic revitalization through fiscal reforms, business-friendly policies, and investment in technology & green energy.  
-  - Increased defense spending, potentially aligning Germany more closely with NATO & EU defense initiatives.  
-
-#### Social Democrats (SPD) - Key Coalition Partner  
-- Role: The SPD will act as a moderating force, ensuring social policy considerations within economic reforms.  
-- Policy Priorities:  
-  - Protecting labor rights & social programs amid economic restructuring.  
-  - Supporting EU economic cohesion policies to counteract nationalist pressures.  
-
-#### Greens - Influencing Sustainability & Energy Policy  
-- Role: Advocating for environmental policies and climate-oriented economic planning within the coalition.  
-- Policy Priorities:  
-  - Accelerating Germany's energy transition away from Russian fossil fuels.  
-  - Promoting tech-driven innovation in sustainability and renewable energy sectors.  
-
-#### Alternative for Germany (AfD) - Rising but Isolated  
-- Role: While politically excluded, the AfD's surge in support (potentially 20% of the vote) pressures the coalition to toughen immigration and EU policy stances.  
-- Implication: Mainstream parties may adopt stricter migration policies to counter the AfD's populist appeal.  
-
----
-
-### Risk & Opportunity Analysis  
-
-#### First-Order Effects: Immediate Political & Economic Impact  
-**Coalition Formation Delays & Policy Uncertainty**  
-- Coalition negotiations could take up to two months, delaying critical economic decisions amid a recession.  
-- A governance vacuum may weaken investor confidence, slowing economic recovery.  
-
-**Far-Right Pressure on National & EU Policies**
-- AfD's rising influence could lead to political polarization within Germany and the broader EU.  
-- Tougher immigration laws and EU budget disputes may emerge as a byproduct of centrist parties countering AfD's narrative.  
-
-**Increased Defense & NATO Alignment**
-- The grand coalition is likely to boost defense spending, bringing Germany in line with NATO's 2% GDP defense target.  
-- Potential expanded military aid to Ukraine could strengthen Germany's influence in European security affairs.  
-
-#### Second-Order Effects: Economic & Trade Implications  
-**Investor Hesitancy Due to Policy Uncertainty**  
-- If coalition negotiations drag on, Germany risks a delayed economic recovery, with projected growth of just 0.3% in 2025 ([CNN, 2025](https://www.cnn.com/2025/02/21/economy/germany-election-economy-tariffs-intl/index.html#:~:text=Germany's%20economy%20is%20lagging%20behind,rate%20among%20large%20advanced%20economies.&text=To%20some%20extent%2C%20the%20German,own%20success%2C%E2%80%9D%20Kirkegaard%20said.)).  
-- Rising U.S. trade tariffs could further pressure German exports, which made up 43% of GDP in 2023 ([World Bank, 2023](https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=DE&name_desc=false)).  
-
-**Economic Reform & Green Energy Investment**
-- The CDU-led coalition could introduce tax incentives to spur investment in technology & energy sectors.  
-- Germany may position itself as Europe's leader in industrial innovation, leveraging sustainable tech and infrastructure spending.  
-
-#### Third-Order Effects: Long-Term Geopolitical Shifts  
-**EU Stability vs. Political Fragmentation Risks  **
-- Germany's grand coalition may reinforce EU unity, particularly in economic and security policies.  
-- However, internal coalition policy conflicts could limit Germany's ability to lead decisively on key EU matters.  
-
-**Stronger European Security Coordination**
-- The coalition's NATO-aligned defense stance could push Europe toward greater defense integration, reducing reliance on U.S. security guarantees.  
-- Germany may play a leading role in EU security policy, particularly in countering Russian military threats.  
 
 """

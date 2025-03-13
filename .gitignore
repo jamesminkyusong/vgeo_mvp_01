@@ -1,4 +1,5 @@
 settings.ini
+vgeo/collect/collect_internal_settings.ini
 __pycache__/
 collect/__pycache__/
 vgeo/collect/test.ipynb
