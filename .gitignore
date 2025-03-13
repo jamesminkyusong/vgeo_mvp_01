@@ -1,4 +1,4 @@
-settings.ini
+main/generate_settings.ini
 vgeo/collect/collect_internal_settings.ini
 __pycache__/
 collect/__pycache__/

@@ -11,7 +11,7 @@ from langchain_openai import ChatOpenAI
 
 def load_configs():
     config = configparser.ConfigParser()
-    config.read('main/settings.ini')
+    config.read('main/generate_settings.ini')
     os.environ['TAVILY_API_KEY']= config['API_KEYS']['TAVILY_KEY'].strip()
     os.environ['OPENAI_API_KEY']= config['API_KEYS']['OPENAI_API_KEY'].strip()
     os.environ['GOOGLE_API_KEY']= config['API_KEYS']['GOOGLE_API_KEY'].strip()
@@ -21,7 +21,7 @@ def load_configs():
     os.environ['ZILLIZ_CLOUD_PASSWORD']= config['API_KEYS']['ZILLIZ_CLOUD_PASSWORD'].strip()
     os.environ['ZILLIZ_CLOUD_API_KEY']= config['API_KEYS']['ZILLIZ_CLOUD_API_KEY'].strip()
     user_topic = config['INPUT']['TOPIC'].strip()
-    output_path = config['OUTPUT']['OUT_PATH'].strip()
+    output_path = config['OUTPUT']['EXPORT_PATH'].strip()
 
     return user_topic, output_path
 
