@@ -1,6 +1,8 @@
 main/generate_settings.ini
-vgeo/collect/collect_internal_settings.ini
 __pycache__/
 collect/__pycache__/
 vgeo/collect/test.ipynb
 vgeo/generate/src/graph.ipynb
+.DS_Store
+vgeo/collect/collect_internal_settings.ini
+
