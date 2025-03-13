@@ -1,0 +1,27 @@
+1. Sample Queries
+(France OR Macron OR Germany OR Merz) AND (nuclear OR "nuclear umbrella") AND (Trump OR Russia OR USA OR "United States of America")
+
+trump AND (tariff OR trade) AND ("international relations" OR "diplomatic tensions" OR trade) AND (Colombia OR Canada OR China OR EU OR Japan OR Mexico)
+
+ukraine AND (russia OR moscow) AND (Zlelensky OR Zelenskyy OR Putin OR Trump) AND (ceasefire OR "peace talks" OR invasion)
+
+2. Languages (only major languages listed; max 7 at once)
+- English (eng), 
+- Spanish (spa), 
+- Chinese (zho), 
+- German (deu),
+- French (fra),
+- Korean (kor),
+- Ukranian (ukr),
+- Russian (rus)
+
+3. Countries (only major countries listed; max 7 at once)
+- USA (US)
+- Germany (GM)
+- France (FR)
+- Russia (RS)
+- Ukraine (UP)
+- Mexico (MX)
+- Colombia (CO)
+- Canada (CA)
+- South Korea (KS)

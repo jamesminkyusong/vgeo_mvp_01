@@ -1,0 +1,5 @@
+settings.ini
+__pycache__/
+collect/__pycache__/
+vgeo/collect/test.ipynb
+vgeo/generate/src/graph.ipynb

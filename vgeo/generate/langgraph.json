@@ -1,0 +1,11 @@
+{
+    "dockerfile_lines": [],
+    "graphs": {
+      "report_masitro": "./src/graph.py:graph"
+    },
+    "python_version": "3.12",
+    "env": "./.env",
+    "dependencies": [
+      "."
+    ]
+  }
