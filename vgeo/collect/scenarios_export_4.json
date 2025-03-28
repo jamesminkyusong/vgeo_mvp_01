@@ -1,0 +1,1133 @@
+[
+    {
+        "scenario_summary_title": "Japan's Ascendancy in US Nonwoven Market Amid Tariff Shifts",
+        "description": "The US market for HS-560394 nonwovens (>150 G/M²) is undergoing significant changes due to tariff impositions. Historically dominated by China in terms of volume, the market is now seeing a shift as tariffs erode China's price advantage. Japan, known for its premium nonwoven products, is poised to capitalize on this shift, potentially leading the market in high-value segments. The imposition of tariffs on Mexico further redistributes market shares, creating opportunities for Japan, Germany, and South Korea to expand their presence.",
+        "actors": [
+            "Japan",
+            "China",
+            "Mexico",
+            "Germany",
+            "South Korea",
+            "United States"
+        ],
+        "trigger_events": [
+            "US imposes 10% tariff on Chinese nonwovens on February 4, 2025",
+            "US increases tariff on Chinese nonwovens to 20% on March 4, 2025",
+            "Announcement of potential tariffs on Mexican nonwovens post-April 2, 2025"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "Trump's Tariff Strategy and Global Economic Impact",
+        "description": "President Donald Trump's evolving tariff strategy has created significant uncertainty in global markets. Initially, there were plans to impose blanket tariffs on various industrial sectors, but reports suggest a more selective approach may be taken. The potential tariffs have caused volatility in stock markets, with companies like Tesla experiencing significant fluctuations. Trump's announcement of a 25% tariff on countries purchasing oil or gas from Venezuela adds another layer of complexity. The strategy has led to ongoing negotiations with key trade partners, including China, the E.U., Mexico, and Canada, as well as discussions with the U.K. and India. The economic outlook remains cautious, with concerns over inflation and corporate profit margins.",
+        "actors": [
+            "President Donald Trump",
+            "Tesla",
+            "Jamieson Greer",
+            "Treasury Secretary Scott Bessent",
+            "China",
+            "E.U.",
+            "Mexico",
+            "Canada",
+            "U.K.",
+            "India",
+            "Hyundai"
+        ],
+        "trigger_events": [
+            "Reports of Trump's decision to not impose blanket tariffs on industrial sectors",
+            "Tesla's letter to Trump's trade representative",
+            "Trump's announcement of a 25% tariff on countries purchasing oil or gas from Venezuela",
+            "Negotiations with China, E.U., Mexico, and Canada",
+            "U.K. and E.U. trade discussions with the U.S.",
+            "Hyundai's investment announcement in the U.S."
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "U.S. Reciprocal Tariff Strategy",
+        "description": "The U.S. government, under President Donald Trump, is considering implementing a series of reciprocal tariffs aimed at reducing the country's $1.2 trillion global goods trade deficit. The strategy involves raising U.S. tariffs to match those of other countries and counteracting non-tariff trade barriers. The focus is on countries with significant trade surpluses and high tariff barriers, referred to as the 'Dirty 15.' The plan is fluid, with potential delays and reversals, as the administration seeks public comments and finalizes its approach.",
+        "actors": [
+            "U.S. Government",
+            "President Donald Trump",
+            "U.S. Trade Representative",
+            "Treasury Secretary Scott Bessent",
+            "White House Economic Adviser Kevin Hassett",
+            "Major U.S. Trade Partners"
+        ],
+        "trigger_events": [
+            "President Trump's inauguration in January",
+            "Announcement of 'Liberation Day' for the U.S. economy",
+            "Public comments request by USTR",
+            "Reports by Wall Street Journal and Bloomberg",
+            "Push by U.S. automakers for tariff waivers"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "Trump's Tariff Offensive and 'Liberation Day'",
+        "description": "In a bold move to address the U.S. trade deficit, President Trump announced a series of tariffs set to be implemented on April 2, dubbed 'Liberation Day.' The tariffs target countries with significant trade surpluses and high tariff barriers, aiming to level the playing field for U.S. industries. The announcement includes a 25% tariff on countries purchasing Venezuelan oil and gas, further escalating global trade tensions. While some countries may receive tariff breaks, the administration remains firm on imposing strong reciprocal tariffs.",
+        "actors": [
+            "United States",
+            "President Donald Trump",
+            "Venezuela",
+            "Hyundai Motor Group",
+            "Countries with trade surpluses (e.g., China, EU, India)"
+        ],
+        "trigger_events": [
+            "Announcement of April 2 as 'Liberation Day' for tariffs",
+            "25% tariff on countries buying Venezuelan oil and gas",
+            "Hyundai's $21 billion investment in the U.S.",
+            "U.S. stock market reaction to tariff flexibility"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "Trump's Reciprocal Tariff Strategy",
+        "description": "President Donald Trump is considering a revised version of his reciprocal tariff proposal, targeting approximately 15% of nations with the largest trade imbalances with the U.S., dubbed the 'dirty 15.' This plan aims to impose matching tariff rates on goods from these countries, potentially disrupting global trade and affecting key sectors like homebuilding. The strategy is part of a broader effort to address trade imbalances, boost American manufacturing, and tackle issues like illegal immigration and fentanyl trafficking.",
+        "actors": [
+            "President Donald Trump",
+            "U.S. Treasury Secretary Scott Bessent",
+            "Homebuilders",
+            "China",
+            "Mexico",
+            "Canada",
+            "Vietnam"
+        ],
+        "trigger_events": [
+            "Consideration of reciprocal tariffs targeting 'dirty 15' countries",
+            "Implementation of 25% tariffs on non-USMCA goods from Mexico and Canada",
+            "20% tariffs on Chinese goods",
+            "Threats to increase tariffs on steel and aluminum imports",
+            "Scheduled expiration of USMCA exemptions on April 2, 'Liberation Day'"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "Trump's Tariff Offensive",
+        "description": "President Donald Trump has announced a series of tariffs targeting various sectors and countries, aiming to reduce the U.S. trade deficit and counteract foreign trade barriers. The tariffs include a 25% levy on countries purchasing oil or gas from Venezuela and potential tariffs on autos, pharmaceuticals, and semiconductor chips. The administration's approach is marked by unpredictability, with threats, reversals, and delays. The tariffs are part of a broader strategy to encourage foreign companies to invest in the U.S. and to address trade imbalances with countries having significant surpluses with the U.S.",
+        "actors": [
+            "President Donald Trump",
+            "U.S. Trade Representative",
+            "Hyundai Motor Group",
+            "Treasury Secretary Scott Bessent",
+            "White House Economic Adviser Kevin Hassett"
+        ],
+        "trigger_events": [
+            "Announcement of tariffs on April 2",
+            "Hyundai's $21 billion investment in the U.S.",
+            "Secondary tariffs on Venezuela",
+            "Focus on 'Dirty 15' countries with trade surpluses"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "U.S. Imposes Secondary Tariffs on Venezuela's Trade Partners",
+        "description": "In a move to exert pressure on Venezuela and its trade partners, President Donald Trump announced the imposition of a 'secondary tariff' on April 2. This tariff targets countries that purchase oil or gas from Venezuela, imposing a 25% levy on any trade they conduct with the U.S. The measure is part of a broader strategy to penalize Venezuela for allegedly sending criminals to the U.S. and to discourage international trade with the South American nation. The secondary tariff is expected to impact major importers of Venezuelan oil, including China, Spain, Russia, Singapore, and Vietnam, potentially straining diplomatic and economic relations.",
+        "actors": [
+            "United States",
+            "Venezuela",
+            "China",
+            "Spain",
+            "Russia",
+            "Singapore",
+            "Vietnam",
+            "President Donald Trump",
+            "President Nicolás Maduro"
+        ],
+        "trigger_events": [
+            "Announcement of secondary tariffs by President Trump",
+            "Allegations of Venezuela sending criminals to the U.S.",
+            "U.S. deportation of Venezuelans under the Alien Enemies Act",
+            "Venezuela's temporary halt on accepting deportation flights",
+            "Revocation of Chevron's license to export Venezuelan oil"
+        ],
+        "cluster_ID": 6
+    },
+    {
+        "scenario_summary_title": "US-China Trade War Escalation",
+        "description": "The Trump administration's imposition of a 25% tariff on $50 billion worth of Chinese technology imports marks a significant escalation in the ongoing trade war between the US and China. The tariffs target key sectors such as aerospace, robotics, and automotive industries, aiming to address China's alleged coercive trade practices, including forced technology transfers and intellectual property theft. In retaliation, China imposed tariffs on US imports, affecting American exports like coal and crude oil. This tit-for-tat tariff exchange has strained economic relations between the two largest economies, with potential global repercussions.",
+        "actors": [
+            "United States",
+            "China",
+            "Donald Trump",
+            "Chinese Ministry of Commerce"
+        ],
+        "trigger_events": [
+            "Announcement of 25% US tariffs on Chinese technology imports",
+            "China's retaliatory tariffs on US imports"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "Targeted Trade Tariffs on 'Dirty 15'",
+        "description": "The U.S. administration, under President Donald Trump, is set to implement targeted trade tariffs on April 2, focusing on 15 major trading partners, referred to as the 'dirty 15'. This move marks a shift from broad industry-wide tariffs to a more strategic approach aimed at reducing trade imbalances. The targeted countries include China, Japan, Germany, Canada, and South Korea, which will face higher import duties. The strategy aligns U.S. tariffs with those imposed by these nations, using emergency presidential economic powers for immediate implementation. Despite industry pushback, the administration maintains a firm stance, though President Trump has hinted at potential flexibility through selective carve-outs.",
+        "actors": [
+            "United States",
+            "China",
+            "Japan",
+            "Germany",
+            "Canada",
+            "South Korea",
+            "President Donald Trump",
+            "Treasury Secretary Scott Bessent",
+            "Commerce Secretary Howard Lutnick",
+            "U.S. Trade Representative Jameson Greer"
+        ],
+        "trigger_events": [
+            "President Trump's directive for trade tariffs",
+            "Shift from broad industry-wide tariffs to targeted tariffs",
+            "Identification of 'dirty 15' countries",
+            "Use of emergency presidential economic powers"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "US Tariff Escalation and Global Trade Tensions",
+        "description": "The United States, under President Donald Trump, is poised to announce a series of new tariffs targeting automobiles, lumber, and other sectors. This move is part of a broader strategy to address the US's significant global trade deficit and counteract perceived unfair trade practices by other nations. The announcement, set for April 2, is being referred to as 'Liberation Day' for the US economy. The tariffs aim to match the levels imposed by other countries and address non-tariff barriers. The administration is focusing on countries with the largest trade surpluses and high tariff barriers, dubbed the 'Dirty 15'.",
+        "actors": [
+            "United States",
+            "President Donald Trump",
+            "Commerce Secretary Howard Lutnick",
+            "Treasury Secretary Scott Bessent",
+            "White House Economic Adviser Kevin Hassett",
+            "Hyundai Motor Group",
+            "Countries in the 'Dirty 15' list"
+        ],
+        "trigger_events": [
+            "Announcement of new tariffs on automobiles, lumber, and pharmaceuticals",
+            "Hyundai's $21 billion investment in the US",
+            "April 2 'Liberation Day' tariff announcement",
+            "Focus on countries with significant trade surpluses and barriers"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "US Tariff Escalation and Global Trade Tensions",
+        "description": "The United States, under President Donald Trump, is poised to announce a series of new tariffs targeting automobiles, aluminum, pharmaceuticals, and other sectors. This move is part of a broader strategy to address the US's $1.2 trillion global goods trade deficit by imposing reciprocal tariffs on countries with significant trade surpluses and high tariff barriers. The announcement, set for April 2, is expected to focus on a select group of countries, referred to as the 'Dirty 15,' which includes major US trade partners. The strategy aims to pressure these countries to lower their tariffs or relocate manufacturing to the US, while also addressing non-tariff trade barriers. The potential for increased tariffs has already led to significant investment commitments from foreign companies, such as Hyundai's $21 billion investment in the US.",
+        "actors": [
+            "United States",
+            "Donald Trump",
+            "Commerce Secretary Howard Lutnick",
+            "Treasury Secretary Scott Bessent",
+            "White House Economic Adviser Kevin Hassett",
+            "Hyundai Motor Group",
+            "Countries in the 'Dirty 15' list"
+        ],
+        "trigger_events": [
+            "Announcement of new tariffs on automobiles, aluminum, and pharmaceuticals",
+            "April 2 deadline for reciprocal tariff announcement",
+            "Hyundai's $21 billion investment in the US",
+            "US's $1.2 trillion global goods trade deficit",
+            "Previous imposition of 20% duties on Chinese imports and 25% duties on global steel and aluminum imports"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "US-Canada Trade Dispute Escalation",
+        "description": "The trade dispute between the US and Canada has intensified following the imposition of a 25% tariff on Canadian steel and aluminum imports by the US. This move, part of a broader strategy by President Trump to address trade imbalances, has sparked significant concern in Canada, especially with an impending federal election. Canadian Foreign Minister Melanie Joly has emphasized the economic interdependence between the two nations and the potential impact on both Canadian and American citizens. The situation is further complicated by the political dynamics in Canada, with the Liberal Party seeking a mandate to address these challenges.",
+        "actors": [
+            "Canada",
+            "United States",
+            "Canadian Foreign Minister Melanie Joly",
+            "US President Donald Trump",
+            "US Commerce Secretary Howard Lutnick",
+            "Canadian Prime Minister Mark Carney",
+            "Conservative Leader Pierre Poilievre"
+        ],
+        "trigger_events": [
+            "Imposition of 25% tariff on Canadian steel and aluminum by the US",
+            "Announcement of reciprocal tariffs by the US",
+            "Upcoming Canadian federal election",
+            "Statements by Canadian Foreign Minister Melanie Joly on trade relations",
+            "US claims of tariffs strengthening manufacturing and reducing trade gap"
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "Targeted Tariff Implementation by Trump Administration",
+        "description": "President Donald Trump is set to announce a new wave of targeted tariffs on April 2, termed as 'liberation day.' These tariffs are designed as reciprocal measures against countries imposing tariffs or non-tariff barriers on the U.S. The plan excludes countries with no tariffs on the U.S. and those with whom the U.S. has a trade surplus. The announcement aims to have an immediate impact, potentially straining relations with allied nations and provoking retaliatory measures. The scope is narrower than initially planned, focusing on specific countries rather than a global approach.",
+        "actors": [
+            "President Donald Trump",
+            "U.S. Allies",
+            "European Union",
+            "Mexico",
+            "Japan",
+            "South Korea",
+            "Canada",
+            "India",
+            "China"
+        ],
+        "trigger_events": [
+            "Announcement of 'liberation day' tariffs on April 2",
+            "Internal negotiations on tariff implementation",
+            "Market reactions to initial tariffs on Canada, Mexico, and China"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "Strained U.S.-Asia Alliances Under Trump",
+        "description": "The Trump administration's approach to trade and military alliances in Asia has led to strained relationships with key allies. The imposition of tariffs on Asian countries, coupled with conflicting signals regarding security commitments, has caused uncertainty among U.S. allies. This scenario explores the potential weakening of alliances crucial for countering China's influence and North Korea's aggression.",
+        "actors": [
+            "United States",
+            "China",
+            "Japan",
+            "South Korea",
+            "Australia"
+        ],
+        "trigger_events": [
+            "Imposition of tariffs on Asian countries",
+            "Withdrawal from the Trans-Pacific Partnership",
+            "Conflicting signals on U.S. security commitments"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "US-Canada Trade Dispute Over Tariffs",
+        "description": "The United States, under President Donald Trump, has imposed a 25% tariff on Canadian steel and aluminum imports, sparking a trade dispute with Canada. The tariffs are part of a broader strategy to introduce 'reciprocal' tariffs aimed at boosting American manufacturing and reducing the trade gap. Canada's Foreign Minister, Melanie Joly, has expressed confidence in Canada's ability to prevail in this dispute, emphasizing the strong economic ties between the two nations. The tariffs have become a significant issue in the upcoming Canadian federal election, with potential impacts on both Canadian and American economies.",
+        "actors": [
+            "Canada",
+            "United States",
+            "President Donald Trump",
+            "Foreign Minister Melanie Joly",
+            "US Commerce Secretary Howard Lutnick",
+            "Prime Minister Mark Carney",
+            "Conservative Leader Pierre Poilievre"
+        ],
+        "trigger_events": [
+            "Imposition of 25% tariff on Canadian steel and aluminum by the US",
+            "Announcement of broad 'reciprocal' tariffs by President Trump",
+            "Upcoming Canadian federal election",
+            "Speculation about a snap election in Canada"
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "U.S. Trade Tensions Strain Asian Security Alliances",
+        "description": "The Trump administration's aggressive trade policies, including tariffs on key Asian allies like Japan, South Korea, and Australia, are causing friction in long-standing security alliances. These tensions threaten to undermine the U.S.'s strategic position in Asia, particularly in the context of potential conflicts with China or North Korea. The Biden administration has attempted to strengthen these alliances through strategic pacts, but the legacy of trade disputes continues to cast a shadow over these relationships.",
+        "actors": [
+            "United States",
+            "China",
+            "Japan",
+            "South Korea",
+            "Australia"
+        ],
+        "trigger_events": [
+            "Imposition of tariffs on aluminum and steel from Australia",
+            "Threats of tariffs on cars from Japan",
+            "Hints of future tariffs on South Korea"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "Canada-US Trade War Escalation",
+        "description": "The trade war between Canada and the United States has intensified following the imposition of tariffs by US President Donald Trump on Canadian steel and aluminum imports. In response, Canada has threatened reciprocal tariffs, leading to heightened tensions between the two nations. The trade war has become a significant issue in Canadian politics, influencing the upcoming federal election. Both the Liberal and Conservative parties are positioning themselves as best equipped to handle the situation, with the potential for a snap election looming. Protests have erupted in Canada, with citizens expressing their discontent over the tariffs and the perceived threat to Canadian sovereignty.",
+        "actors": [
+            "Canada",
+            "United States",
+            "Canadian Prime Minister Mark Carney",
+            "US President Donald Trump",
+            "Canadian Foreign Minister Mélanie Joly",
+            "Conservative Leader Pierre Poilievre"
+        ],
+        "trigger_events": [
+            "Imposition of 25% tariffs on Canadian steel and aluminum by the US",
+            "Threat of further US tariffs on April 2",
+            "Canadian threat of reciprocal tariffs",
+            "Upcoming Canadian federal election",
+            "Protests in Canada against US tariffs and sovereignty threats"
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "Global Retaliatory Tariff Escalation",
+        "description": "In response to the Trump administration's second-term tariffs, major U.S. trade partners, including Canada, China, Mexico, and the European Union, have announced or threatened retaliatory tariffs. These measures target specific U.S. products and industries, aiming to maximize economic leverage and political pressure. The situation mirrors the 2018-2019 trade tensions, with potential for significant economic repercussions for U.S. exporters, particularly in agriculture and manufacturing sectors.",
+        "actors": [
+            "United States",
+            "Canada",
+            "China",
+            "Mexico",
+            "European Union"
+        ],
+        "trigger_events": [
+            "Trump administration's second-term tariffs",
+            "Retaliatory tariffs by Canada, China, Mexico, and EU",
+            "Targeted tariffs on U.S. products and industries"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "Trilateral Cooperation Amidst Geopolitical Tensions",
+        "description": "China, Japan, and South Korea engage in trilateral talks to strengthen economic and technological cooperation amidst geopolitical tensions. The discussions aim to revive a trilateral free trade agreement and promote regional stability, despite challenges posed by historical disputes and domestic political upheavals.",
+        "actors": [
+            "China",
+            "Japan",
+            "South Korea"
+        ],
+        "trigger_events": [
+            "Trilateral foreign ministerial talks on March 22",
+            "US President Trump's trade protectionist stance",
+            "Domestic political turmoil in South Korea",
+            "Japan's internal political challenges"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "Alaska-South Korea Energy Cooperation Talks",
+        "description": "Alaskan state representatives, led by Governor Mike Dunleavy, visited South Korea to discuss potential energy cooperation, focusing on a stalled gas pipeline project. The project aims to transport gas from Alaska's remote north via a $44 billion pipeline. The discussions are part of a broader push by the U.S. to involve Asian allies in the project, which has been promoted by President Donald Trump. The talks included meetings with South Korean Industry Minister Ahn Duk-geun and Governor Kim Dong-yeon of Gyeonggi Province, highlighting Alaska's role in the global energy system and the potential for mutually beneficial cooperation.",
+        "actors": [
+            "Governor Mike Dunleavy",
+            "South Korean Industry Minister Ahn Duk-geun",
+            "Governor Kim Dong-yeon",
+            "President Donald Trump",
+            "Glanfarne Group",
+            "American Chamber of Commerce in Korea (AMCHAM)"
+        ],
+        "trigger_events": [
+            "Alaskan delegation's visit to South Korea",
+            "Stalled gas pipeline project",
+            "President Trump's promotion of the project",
+            "South Korea's interest in energy cooperation"
+        ],
+        "cluster_ID": 5
+    },
+    {
+        "scenario_summary_title": "Implementation of Reciprocal Tariffs by the U.S.",
+        "description": "The U.S. government, under President Donald Trump, plans to implement reciprocal tariffs to address trade imbalances and revitalize domestic manufacturing. The initiative aims to equalize U.S. tariffs with those imposed by other countries, potentially leading to a fairer global trade system. However, the complexity of the current Harmonized Tariff Schedule (HTS) and the potential for supply chain manipulation pose significant challenges. The administration is considering a tiered tariff system and value-chain tariffs to simplify and modernize the approach.",
+        "actors": [
+            "U.S. Government",
+            "President Donald Trump",
+            "U.S. Trade Representatives",
+            "Foreign Governments (e.g., China, Brazil, European Union)",
+            "U.S. Manufacturers",
+            "Economists and Trade Experts"
+        ],
+        "trigger_events": [
+            "Announcement of reciprocal tariffs by President Trump",
+            "Rising U.S. trade deficit with countries like China",
+            "Confusion and volatility in the stock market due to tariff announcements",
+            "Consideration of a tiered tariff system by the Trump administration"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "Hyundai's Strategic US Investment Amid Tariff Concerns",
+        "description": "Hyundai has announced a significant $20 billion investment in US manufacturing, including a $5 billion steel plant in Louisiana. This move is strategically aligned with President Trump's trade policies, particularly in response to tariffs on steel and aluminum imports. The investment aims to bolster Hyundai's supply chain for its US auto plants, creating over 1,400 jobs and marking Hyundai's largest US investment to date. The decision reflects a broader trend of global firms increasing US investments to mitigate tariff impacts.",
+        "actors": [
+            "Hyundai",
+            "US Government",
+            "President Donald Trump",
+            "Hyundai Chairman Euisun Chung",
+            "Louisiana Governor Jeff Landry"
+        ],
+        "trigger_events": [
+            "Introduction of 25% tariffs on steel and aluminum imports by the US",
+            "Hyundai's strategic discussions in 2019 during a meeting in Seoul",
+            "Announcement of new tariffs on Asian and European car imports"
+        ],
+        "cluster_ID": 5
+    },
+    {
+        "scenario_summary_title": "Escalating Trade Tensions Between U.S. and Canada",
+        "description": "The United States, under President Donald Trump, has initiated a series of tariffs targeting Canadian imports, leading to a trade war between the two nations. The tariffs, which are set to increase on April 2, have strained diplomatic relations and raised concerns about the future of the USMCA agreement. Canadian Prime Minister Mark Carney has expressed willingness to negotiate, provided Canada is treated as a sovereign nation. The situation has led to reciprocal tariffs from Canada, further deepening the economic divide.",
+        "actors": [
+            "United States",
+            "Canada",
+            "President Donald Trump",
+            "Prime Minister Mark Carney"
+        ],
+        "trigger_events": [
+            "Announcement of U.S. tariffs on Canadian imports",
+            "Canada's retaliatory tariffs on U.S. goods",
+            "Trump's suggestion of Canada as the 51st state",
+            "April 2 deadline for increased tariffs"
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "China's Economic Globalization Amid US Trade Tensions",
+        "description": "In response to escalating trade tensions initiated by US President Donald Trump's tariffs on Chinese goods, China is reaffirming its commitment to economic globalization. Premier Li Qiang emphasized China's role as a defender of the multilateral economic system, despite global economic fragmentation and rising instability. The China Development Forum, attended by global business leaders, served as a platform for China to assert its stance on maintaining stability and certainty in the global economy. The ongoing trade disputes have prompted China to seek dialogue with the US, aiming to resolve issues such as the flow of fentanyl and its precursors.",
+        "actors": [
+            "China",
+            "United States",
+            "Donald Trump",
+            "Premier Li Qiang",
+            "US Senator Steve Daines",
+            "Vice Premier He Lifeng",
+            "Apple CEO Tim Cook",
+            "CEOs of FedEx, Pfizer, Qualcomm"
+        ],
+        "trigger_events": [
+            "US President Donald Trump imposes multiple rounds of tariffs on Chinese goods.",
+            "China Development Forum convenes with global business leaders in attendance.",
+            "US Senator Steve Daines visits Beijing for trade talks.",
+            "China expresses willingness to engage in dialogue with the US."
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "US-India Trade Tensions Escalate",
+        "description": "The United States, under President Trump's 'America First' policy, has imposed reciprocal tariffs on India starting April 2, citing unfair duties on US goods. This move is part of a broader strategy to address global trade imbalances and target countries with high tariffs on American products. India, a key US ally, faces a dilemma: reduce tariffs to maintain favorable trade relations or risk a trade war that could harm its economy. The situation is further complicated by India's reliance on Chinese imports, which could become more expensive due to US-China trade tensions.",
+        "actors": [
+            "United States",
+            "India",
+            "Donald Trump",
+            "Narendra Modi"
+        ],
+        "trigger_events": [
+            "Announcement of US tariffs on India starting April 2",
+            "India's existing high tariffs on US goods",
+            "US 'America First' economic strategy"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "South Korea's Strategic Shift in Oil Exports Amid Global Trade Uncertainties",
+        "description": "South Korean clean oil product exporters are strategically focusing on their top customers in the Asia-Oceania market, such as Australia and Japan, while leveraging the South Korea-US Free Trade Agreement (FTA) to maintain stable exports to the US. This shift is driven by the uncertainties surrounding global trade and tariffs, particularly under the Trump administration's policies. The emphasis is on securing market share and ensuring supply stability to key customers, amidst a backdrop of fluctuating global economic conditions.",
+        "actors": [
+            "South Korean Oil Exporters",
+            "Australian Government",
+            "Japanese Government",
+            "US Government",
+            "Korea Petroleum Association (KPA)"
+        ],
+        "trigger_events": [
+            "Uncertainties in global trade tariffs under the Trump administration",
+            "Australia's expansion of diesel storage facilities",
+            "Japan's reduction in refining capacity due to decarbonization initiatives",
+            "Record influx of foreign visitors to Japan due to a weak yen",
+            "South Korea-US Free Trade Agreement (FTA)"
+        ],
+        "cluster_ID": 5
+    },
+    {
+        "scenario_summary_title": "Brazil-Japan Trade and Diplomatic Strengthening",
+        "description": "Brazil's President Luiz Inacio Lula da Silva embarks on a state visit to Japan to strengthen trade and diplomatic ties amidst rising US protectionism. The visit aims to diversify Brazil's trade partners, focusing on increasing exports to Japan and discussing joint biofuel development. The leaders will also address the importance of a rules-based international order, subtly critiquing China's foreign policy. The visit includes a state banquet and economic forum participation, highlighting Brazil's intent to balance its trade landscape in the Asia-Pacific region.",
+        "actors": [
+            "Brazil",
+            "Japan",
+            "United States",
+            "China"
+        ],
+        "trigger_events": [
+            "US tariffs on steel and other imports",
+            "Lula's state visit to Japan",
+            "COP30 UN climate summit preparations",
+            "Brazil's increased commercial dependence on China"
+        ],
+        "cluster_ID": 6
+    },
+    {
+        "scenario_summary_title": "South Korea's Economic Challenges Amid US Tariff Policies",
+        "description": "South Korea faces a complex economic landscape characterized by domestic political instability, sluggish demand, and external pressures from US-imposed tariffs. The Trump administration's reciprocal tariffs threaten South Korea's export-driven economy, particularly impacting industries like semiconductors and automobiles. The OECD has revised South Korea's growth forecast down to 1.5%, citing trade barriers and geopolitical uncertainties. The Bank of Korea (BOK) must navigate these challenges while maintaining fiscal discipline and managing interest rate disparities with the US Federal Reserve.",
+        "actors": [
+            "South Korea",
+            "United States",
+            "Trump Administration",
+            "Bank of Korea",
+            "OECD",
+            "US Federal Reserve"
+        ],
+        "trigger_events": [
+            "US Trump administration's announcement of reciprocal tariffs",
+            "Impeachment of South Korean President Yoon Suk Yeol",
+            "OECD's revised growth forecast for South Korea",
+            "US Federal Reserve's interest rate decision",
+            "Implementation of US tariffs on steel and aluminum imports"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "US-China Diplomatic Engagement Amid Trade Tensions",
+        "description": "In response to escalating trade tensions between the United States and China, Chinese Premier Li Qiang has called for dialogue and cooperation with Washington. This initiative aims to ease strained relations and potentially set the stage for a summit between US President Donald Trump and Chinese President Xi Jinping. The meeting in Beijing, attended by US Senator Steve Daines and prominent US business executives, underscores China's commitment to economic globalization and multilateralism despite the challenges posed by US-imposed tariffs.",
+        "actors": [
+            "Chinese Premier Li Qiang",
+            "US Senator Steve Daines",
+            "US President Donald Trump",
+            "Chinese President Xi Jinping",
+            "CEOs of major US firms"
+        ],
+        "trigger_events": [
+            "Imposition of blanket tariffs by the US on Chinese goods",
+            "Meeting between Chinese Premier Li Qiang and US Senator Steve Daines",
+            "China Development Forum attended by global business leaders"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "U.S.-Canada Trade Tensions Escalate with Steel and Aluminum Tariffs",
+        "description": "In March, U.S. President Donald Trump imposed a 25% tariff on steel and aluminum imports from Canada, citing national security concerns under Sec. 232 of the Trade Expansion Act of 1962. This move marks a significant escalation in trade tensions between the two countries, as Canada retaliates with its own tariffs. The tariffs apply to both raw materials and finished goods, with no exemptions granted this time. The policy is reminiscent of similar measures taken in 2018, but with stricter conditions and higher rates.",
+        "actors": [
+            "United States",
+            "Canada",
+            "Donald Trump"
+        ],
+        "trigger_events": [
+            "Imposition of 25% tariffs on Canadian steel and aluminum by the U.S.",
+            "Canada's retaliatory tariffs against the U.S."
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "Impact of Tariffs on US Homebuilding Costs",
+        "description": "The imposition of tariffs by President Donald Trump on Canadian, Mexican, and Chinese goods is projected to significantly increase the cost of new home construction in the United States. The National Association of Home Builders (NAHB) estimates that these tariffs could raise the price of a new single-family home by $7,500 to $10,000. The tariffs include a 25% duty on Canadian and Mexican goods and a 20% duty on Chinese imports. The tariffs on Canadian softwood lumber, a critical material for home construction, could rise from 14.5% to 39.5%, with potential future increases. These tariffs are expected to increase the cost of imported construction materials by over $3 billion, affecting both builders who rely on foreign and domestic materials. The housing market, already under pressure from high prices and declining sales, could face further challenges due to these increased costs.",
+        "actors": [
+            "President Donald Trump",
+            "National Association of Home Builders (NAHB)",
+            "D.R. Horton",
+            "K.B. Home",
+            "Department of Commerce",
+            "Zonda's Chief Economist Ali Wolf"
+        ],
+        "trigger_events": [
+            "Imposition of 25% tariff on Canadian and Mexican goods",
+            "Imposition of 20% tariff on Chinese imports",
+            "Announcement of potential future tariff increases on Canadian softwood lumber",
+            "Tariffs on steel and aluminum imports taking effect",
+            "Threats of additional tariffs on Canada and the European Union"
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "US-China Trade Tensions and Dialogue Initiatives",
+        "description": "Amid escalating trade tensions between the United States and China, Premier Li Qiang calls for dialogue and cooperation to ease strained relations. The meeting in Beijing, attended by US business executives and Senator Steve Daines, aims to set the stage for a potential summit between President Trump and President Xi Jinping. The focus is on promoting steady and sustainable development of bilateral relations, despite the backdrop of blanket tariffs imposed by the US and China's commitment to economic globalization.",
+        "actors": [
+            "Premier Li Qiang",
+            "President Donald Trump",
+            "President Xi Jinping",
+            "Senator Steve Daines",
+            "US Business Executives (FedEx, Pfizer, Qualcomm)"
+        ],
+        "trigger_events": [
+            "Imposition of blanket tariffs by the US on Chinese goods",
+            "Meeting between Premier Li Qiang and Senator Steve Daines",
+            "China Development Forum attended by global business leaders"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "Impact of USMCA Tariffs on North American Automotive Supply Chain",
+        "description": "The proposed tariffs on goods from Mexico and Canada under the USMCA agreement are poised to significantly impact the North American automotive supply chain. While most vehicles meet the free trade requirements, a substantial portion of individual parts do not, leading to potential disruptions. The tariffs, set to take effect on April 2, could exacerbate existing challenges in the post-Covid supply chain, including high interest rates, labor shortages, and reduced profitability. The automotive industry, particularly suppliers, faces increased financial strain, with many companies lobbying for continued tariff exemptions for compliant parts and vehicles.",
+        "actors": [
+            "Donald Trump",
+            "American Axle & Manufacturing Holdings",
+            "Magna International",
+            "Adient",
+            "Aptiv",
+            "Lear Corp.",
+            "MEMA Original Equipment Suppliers",
+            "Automotive Parts Manufacturers’ Association",
+            "BMW",
+            "Federal Reserve Bank of Chicago",
+            "Magna",
+            "Forvia"
+        ],
+        "trigger_events": [
+            "Implementation of USMCA in 2020",
+            "Proposed tariffs on non-compliant parts",
+            "Post-Covid supply chain challenges",
+            "Lobbying efforts by automotive companies",
+            "Decline in USMCA compliance rates for parts"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Hyundai's Strategic U.S. Onshoring Investment",
+        "description": "Hyundai, a leading South Korean conglomerate, has announced a significant $21 billion investment in the United States, including a $5.8 billion steel plant in Louisiana. This move is part of a broader strategy to increase localization and mitigate the impact of impending U.S. tariffs. The investment aims to bolster Hyundai's electric vehicle production capabilities in the U.S., aligning with the company's goal to remain competitive in the growing EV market. The announcement was made at the White House, highlighting the geopolitical significance of the investment amidst ongoing trade tensions.",
+        "actors": [
+            "Hyundai",
+            "U.S. Government",
+            "President Donald Trump",
+            "Hyundai Chairman Euisun Chung",
+            "Louisiana Governor Jeff Landry"
+        ],
+        "trigger_events": [
+            "Announcement of U.S. tariffs by President Trump",
+            "Hyundai's strategic decision to increase localization",
+            "White House meeting with international conglomerates",
+            "Hyundai's competitive positioning in the U.S. EV market"
+        ],
+        "cluster_ID": 5
+    },
+    {
+        "scenario_summary_title": "US-China Tariff Dispute Escalation",
+        "description": "The US has significantly increased tariffs on Chinese imports, leading to a heated debate between former Treasury Secretary Larry Summers and current Treasury Secretary Scott Bessent. Summers criticizes Bessent's claim that Chinese producers will absorb the tariffs, citing rising US steel prices as evidence of domestic impact. The tariffs, part of President Trump's aggressive trade policy, target over $1 trillion in imports, with potential exemptions for Canada and Mexico set to lapse. The situation has led to increased economic uncertainty and concerns over inflation.",
+        "actors": [
+            "Larry Summers",
+            "Scott Bessent",
+            "Donald Trump",
+            "US Treasury Department",
+            "White House",
+            "Chinese Manufacturers"
+        ],
+        "trigger_events": [
+            "Trump's announcement of a 25% tariff on steel and aluminum imports",
+            "Bessent's statement on Chinese manufacturers absorbing tariffs",
+            "Rising US steel prices",
+            "Lapse of tariff exemptions for Canada and Mexico"
+        ],
+        "cluster_ID": 2
+    },
+    {
+        "scenario_summary_title": "U.S.-Canada Diplomatic and Economic Tensions",
+        "description": "Diplomatic relations between the United States and Canada have deteriorated following President Trump's remarks referring to Canada as the '51st state' and the imposition of tariffs on Canadian imports. These actions have sparked outrage in Canada, leading to retaliatory tariffs and a surge in nationalism. The situation has resulted in economic consequences for both nations, with increased inflation in Canada and potential job losses in the U.S. The tensions have also prompted Canada to bolster its defense capabilities to maintain sovereignty.",
+        "actors": [
+            "United States",
+            "Canada",
+            "President Donald Trump",
+            "Canadian Prime Minister Mark Carney",
+            "Liberal Member of Parliament Charlie Angus",
+            "U.S. Secretary of State Marco Rubio"
+        ],
+        "trigger_events": [
+            "President Trump's '51st state' comments in November 2024",
+            "Imposition of U.S. tariffs on Canadian imports on March 12, 2025",
+            "Canada's retaliatory tariffs on U.S. imports starting March 4, 2025",
+            "Resignation of former Canadian Prime Minister Justin Trudeau in January 2025",
+            "Swearing-in of Canadian Prime Minister Mark Carney on March 14, 2025"
+        ],
+        "cluster_ID": 1
+    },
+    {
+        "scenario_summary_title": "US Reciprocal Tariffs and Global Trade Tensions",
+        "description": "In February 2025, US President Donald Trump announced the implementation of reciprocal tariffs, aiming to match the tariffs imposed by other countries on US exports. This policy has introduced complexities into global trade dynamics, leading to economic uncertainties and shifts in international relations. The World Trade Organization (WTO) has expressed concerns about the potential impact of these tariffs on global trade in the medium term. The policy has forced America's closest allies to choose between retaliating or acquiescing, with the European Union and Canada leading the charge against the tariffs.",
+        "actors": [
+            "United States",
+            "Donald Trump",
+            "World Trade Organization",
+            "European Union",
+            "Canada"
+        ],
+        "trigger_events": [
+            "Announcement of US reciprocal tariffs on February 13, 2025",
+            "Implementation of tariffs starting April 2, 2025",
+            "WTO's statement on trade policy uncertainty in March 2025"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "U.S.-EU Trade Tensions Escalate",
+        "description": "The European Union's trade commissioner, Maros Sefcovic, is engaged in high-stakes negotiations with U.S. trade officials to prevent the imposition of steep tariffs on EU goods. The U.S. administration, under President Donald Trump, is pursuing a reciprocal tariff strategy to counteract perceived unfair trade practices by major trading partners. Despite previous discussions, little progress has been made, and the EU is preparing counter-measures, including a 50% tariff on U.S. bourbon. The situation is tense, with potential for a full-blown trade war if negotiations fail.",
+        "actors": [
+            "European Union",
+            "United States",
+            "Maros Sefcovic",
+            "Donald Trump",
+            "Howard Lutnick",
+            "Jamieson Greer"
+        ],
+        "trigger_events": [
+            "Trump's announcement of reciprocal tariff plan",
+            "Imposition of 25% tariffs on steel and aluminum imports",
+            "EU's preparation of counter-measures"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "US Imposes 25% Tariff on Foreign-Made Cars",
+        "description": "In a move to bolster domestic manufacturing, US President Donald Trump announced a 25% tariff on foreign-made cars and parts, effective April 3. This decision aims to revitalize the US manufacturing sector but risks straining relationships with key trading partners such as Japan, South Korea, Canada, Mexico, and Germany. The tariffs have caused uncertainty in financial markets and raised concerns about potential economic impacts, including increased car prices and job market effects.",
+        "actors": [
+            "US President Donald Trump",
+            "Peter Navarro",
+            "Wendy Cutler",
+            "Canadian Prime Minister Mark Carney"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on foreign-made cars and parts",
+            "Previous tariffs on steel and aluminum",
+            "Concerns over national security and manufacturing base erosion",
+            "US-Mexico-Canada Agreement (USMCA) provisions"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "US Imposes 25% Tariff on Imported Autos",
+        "description": "The United States, under President Donald Trump, has announced a 25% tariff on imported automobiles and light trucks, effective April 2. This move is part of a broader strategy to boost US manufacturing and government revenue while pressuring other nations on trade practices. The tariffs are expected to strain trade relations with key partners such as Japan, Germany, and Canada, potentially leading to increased car prices, reduced consumer demand, and impacts on employment in the auto sector. The announcement has already caused a downturn in financial markets, with significant impacts on auto stocks.",
+        "actors": [
+            "United States",
+            "President Donald Trump",
+            "Japan",
+            "Germany",
+            "Canada",
+            "Mexico",
+            "South Korea"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on imported autos",
+            "Previous tariffs on steel and aluminum",
+            "Trade actions against Canada, Mexico, and China"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "US Auto Tariffs Escalate Trade Tensions",
+        "description": "In a significant move to bolster domestic manufacturing, US President Donald Trump announced a 25% tariff on all imported cars not manufactured in the United States. This decision is part of a broader strategy to impose tariffs on various sectors, including steel, aluminum, and potentially pharmaceuticals and semiconductors. The tariffs are set to take effect on April 2, dubbed 'Liberation Day,' and are expected to strain relations with key trading partners such as Canada, Mexico, Japan, South Korea, and Germany. The tariffs aim to revitalize American industry and address perceived unfair trade practices, but they have also led to market volatility and concerns over potential economic downturns.",
+        "actors": [
+            "US President Donald Trump",
+            "US Automakers (e.g., General Motors, Ford)",
+            "Foreign Automakers (e.g., Toyota, BMW)",
+            "US Trading Partners (Canada, Mexico, Japan, South Korea, Germany)",
+            "US Financial Markets"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on imported cars",
+            "Previous tariffs on steel and aluminum",
+            "Market reactions and financial volatility",
+            "Ongoing trade negotiations with EU and other partners"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "US Imposes Permanent Auto Tariffs",
+        "description": "In an effort to bolster domestic manufacturing and reduce the budget deficit, US President Donald Trump has imposed a 25% tariff on automobile imports. This move is expected to generate $100 billion annually. While the tariffs aim to support domestic manufacturers, they are also likely to lead to increased car prices as automakers pass the tariff burden onto consumers. The policy is set to remain in place for the duration of Trump's term, with the administration emphasizing its role in spurring economic growth.",
+        "actors": [
+            "US President Donald Trump",
+            "US domestic auto manufacturers",
+            "International auto manufacturers",
+            "US consumers"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on automobile imports",
+            "President Trump's statement on the permanence of the tariffs",
+            "Expectation of increased car prices due to tariff burden"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Escalation of Global Trade Tensions",
+        "description": "The Trump administration's imposition of tariffs on key trading partners, including China, Canada, and Mexico, has sparked concerns of a global trade war. The recent introduction of a 25% tariff on auto imports, along with reciprocal tariffs on various goods, has strained international trade relations. This strategy mirrors actions taken during Trump's first term, where similar tariffs were levied, particularly against China. The potential for a full-scale trade war looms as these measures are expected to provoke retaliatory actions from affected countries.",
+        "actors": [
+            "United States",
+            "China",
+            "Canada",
+            "Mexico",
+            "European Union"
+        ],
+        "trigger_events": [
+            "Imposition of 25% tariff on auto imports by the US",
+            "Reciprocal tariffs by affected countries",
+            "Historical precedent of US-China trade tensions during Trump's first term",
+            "Trump's promise to tax foreign countries to benefit US citizens"
+        ],
+        "cluster_ID": 4
+    },
+    {
+        "scenario_summary_title": "US Imposes Steep Tariffs on Auto Imports",
+        "description": "In a significant move to bolster domestic manufacturing, US President Donald Trump announced a 25% tariff on all imported cars not made in the United States. This decision is part of a broader strategy to impose tariffs on various sectors, including steel, aluminum, and potentially pharmaceuticals and semiconductors. The tariffs are intended to raise government revenue, revitalize American industry, and address perceived unfair trade practices. However, this move risks straining relationships with key trading partners such as Japan, South Korea, Canada, Mexico, and Germany, and could lead to increased car prices and job market impacts in the US.",
+        "actors": [
+            "Donald Trump",
+            "US Government",
+            "Automakers",
+            "Japan",
+            "South Korea",
+            "Canada",
+            "Mexico",
+            "Germany"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on imported cars",
+            "Previous tariffs on steel and aluminum",
+            "Concerns over unfair trade practices",
+            "Upcoming 'Liberation Day' with potential further tariffs"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Escalating Global Trade War Under Trump",
+        "description": "The scenario involves the re-escalation of a global trade war initiated by U.S. President Donald Trump through the imposition of sweeping tariffs on major trading partners, including China, Canada, Mexico, and the European Union. The tariffs, ranging from 10% to 25% on various goods, have led to retaliatory measures from affected countries, creating a cycle of economic tension and uncertainty. The situation is further complicated by Trump's threats of additional tariffs on countries engaging in trade with Venezuela and the introduction of 'reciprocal' tariffs to match foreign tax rates. The trade war has significant implications for global businesses, consumer prices, and international relations.",
+        "actors": [
+            "United States",
+            "China",
+            "Canada",
+            "Mexico",
+            "European Union",
+            "Colombia",
+            "Venezuela"
+        ],
+        "trigger_events": [
+            "Trump's inauguration and promise to impose tariffs",
+            "Initial tariffs on China, Canada, and Mexico",
+            "Retaliatory tariffs by China, Canada, and Mexico",
+            "Trump's executive orders on steel, aluminum, and other goods",
+            "China's countermeasures and expanded export controls",
+            "EU's retaliatory trade actions",
+            "Trump's threats of tariffs on European wine and spirits",
+            "Tariffs on countries trading with Venezuela"
+        ],
+        "cluster_ID": 6
+    },
+    {
+        "scenario_summary_title": "Global Trade War Escalation Under Trump",
+        "description": "The re-escalation of a global trade war under President Donald Trump, marked by sweeping tariffs on imports from key trading partners such as China, Canada, Mexico, and the European Union. The tariffs, ranging from 10% to 25%, target a wide array of goods, including steel, aluminum, and agricultural products. Retaliatory measures from affected countries further strain international trade relations, leading to increased prices for consumers and potential disruptions in global supply chains.",
+        "actors": [
+            "United States",
+            "China",
+            "Canada",
+            "Mexico",
+            "European Union",
+            "Colombia",
+            "Venezuela"
+        ],
+        "trigger_events": [
+            "Trump's inauguration and promise to impose tariffs",
+            "Executive orders imposing tariffs on China, Canada, and Mexico",
+            "Retaliatory tariffs from China, Canada, and Mexico",
+            "Trump's reciprocal tariff policy announcement",
+            "EU's retaliatory measures against U.S. tariffs",
+            "Trump's threat of tariffs on European wine and spirits",
+            "Tariffs on countries importing oil from Venezuela"
+        ],
+        "cluster_ID": 6
+    },
+    {
+        "scenario_summary_title": "California's Methane Satellite Project",
+        "description": "California is pioneering a satellite data project aimed at tracking and reducing methane emissions. This initiative is part of the state's broader environmental strategy to combat climate change by monitoring and mitigating greenhouse gas emissions. The project is expected to provide real-time data on methane leaks, enabling quicker responses and more effective policy-making.",
+        "actors": [
+            "California State Government",
+            "Environmental Protection Agencies",
+            "Satellite Technology Companies"
+        ],
+        "trigger_events": [
+            "Increased awareness of climate change impacts",
+            "Advancements in satellite technology",
+            "State policy prioritizing greenhouse gas reduction"
+        ],
+        "cluster_ID": 0
+    },
+    {
+        "scenario_summary_title": "Global Auto Tariff Escalation",
+        "description": "The U.S. administration, under President Donald Trump, has imposed a 25% tariff on imported vehicles, expanding the ongoing global trade war. This move has led to significant market reactions, with auto stocks plummeting and allied nations considering retaliatory measures. The tariffs are part of a broader strategy to address the U.S. trade deficit and revive domestic manufacturing, but they risk escalating tensions with key allies and disrupting the global auto industry.",
+        "actors": [
+            "United States",
+            "Donald Trump",
+            "Canada",
+            "Mark Carney",
+            "European Union",
+            "Ursula von der Leyen",
+            "Japan",
+            "Shigeru Ishiba",
+            "South Korea",
+            "Brazil",
+            "Luiz Inacio Lula da Silva",
+            "United Auto Workers",
+            "Volkswagen",
+            "Tesla",
+            "Elon Musk"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on imported vehicles by the U.S.",
+            "Retaliatory threats from Canada and the European Union",
+            "Market reaction with auto stocks leading declines",
+            "Statements from global leaders criticizing the tariffs",
+            "UAW's support for the tariffs as a boost for American jobs"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "US Imposes 25% Tariff on Imported Cars",
+        "description": "In a significant escalation of trade tensions, US President Donald Trump announced a 25% tariff on imported cars and car parts. This move is part of a broader strategy to revive US manufacturing and protect the domestic auto industry, which the administration claims has been undermined by excessive imports. The tariffs are set to take effect on April 2 and are expected to disrupt the global auto industry, particularly affecting the integrated supply chains in North America. Key trading partners, including the EU, Canada, and Japan, have expressed strong opposition, warning of potential retaliatory measures and economic repercussions.",
+        "actors": [
+            "United States",
+            "Donald Trump",
+            "European Union",
+            "Ursula von der Leyen",
+            "Canada",
+            "Mark Carney",
+            "Japan",
+            "Shigeru Ishiba",
+            "US Auto Industry",
+            "AAPC",
+            "Foreign Auto Exporters"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on imported cars by Donald Trump",
+            "Concerns raised by key trading partners",
+            "Potential retaliatory measures by affected countries",
+            "Impact on global and North American auto industry supply chains"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's Auto Tariffs and Global Trade Tensions",
+        "description": "President Donald Trump announced a 25% tariff on auto imports, aiming to boost domestic manufacturing and reduce the budget deficit. The tariffs, expected to generate $100 billion annually, could lead to higher vehicle prices and reduced consumer choice. The move has sparked criticism from foreign leaders and risks escalating into a broader trade war, potentially impacting global economic growth.",
+        "actors": [
+            "Donald Trump",
+            "U.S. Automakers",
+            "Foreign Automakers",
+            "Canadian Prime Minister Mark Carney",
+            "European Commission President Ursula von der Leyen"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariffs on auto imports",
+            "Criticism from foreign leaders",
+            "Potential escalation into a broader trade war"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "U.S. Imposes 25% Tariffs on Automobile Imports",
+        "description": "In March 2025, U.S. President Donald Trump announced a 25% tariff on automobile imports, aiming to boost domestic manufacturing. This policy could lead to increased production costs for automakers reliant on global supply chains, potentially raising auto prices and reducing sales. The tariffs are part of a broader strategy to reshape global trade relations, with reciprocal taxes planned for other nations.",
+        "actors": [
+            "U.S. President Donald Trump",
+            "U.S. Automakers (General Motors, Ford, Stellantis)",
+            "Foreign Automakers",
+            "White House Administration"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariffs on automobile imports",
+            "Stock market reactions of automakers",
+            "Previous imposition of tariffs on China, Mexico, and Canada"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's Auto Tariff Policy",
+        "description": "President Donald Trump announced a 25% tariff on auto imports, aiming to boost domestic manufacturing. This policy could lead to increased production costs for automakers reliant on global supply chains, potentially raising auto prices and reducing sales. The tariffs are part of a broader strategy to reshape global trade relations, with potential risks of sparking a trade war.",
+        "actors": [
+            "President Donald Trump",
+            "U.S. Automakers (General Motors, Ford, Stellantis)",
+            "Foreign Automakers",
+            "Global Supply Chain Partners"
+        ],
+        "trigger_events": [
+            "Announcement of 25% auto import tariffs",
+            "Stock market reactions of automakers",
+            "Previous tariffs on steel, aluminum, and other goods"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's Auto Tariff Policy",
+        "description": "President Donald Trump announced a 25% tariff on auto imports, aiming to boost domestic manufacturing. This policy could lead to increased production costs for automakers reliant on global supply chains, potentially raising auto prices and reducing sales. The tariffs are part of a broader strategy to reshape global trade relations and assert U.S. economic dominance.",
+        "actors": [
+            "Donald Trump",
+            "U.S. Automakers",
+            "Foreign Automakers",
+            "Global Supply Chains"
+        ],
+        "trigger_events": [
+            "Announcement of 25% auto import tariffs",
+            "Global supply chain dependencies",
+            "Stock market reactions of automakers"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "US Imposes 25% Tariff on Foreign-Made Cars",
+        "description": "In a significant escalation of trade tensions, US President Trump has announced a 25% tariff on all foreign-made cars, effective April 2. This move is part of a broader 'reciprocal tariff' agenda targeting multiple countries. The tariffs aim to incentivize domestic car production but disrupt the established global supply chain, affecting countries like Japan, South Korea, and the EU. The policy is expected to increase car prices, reduce production, and potentially lead to a slowdown in the auto industry.",
+        "actors": [
+            "US Government",
+            "President Trump",
+            "Japan",
+            "South Korea",
+            "European Union",
+            "Canada",
+            "Mexico",
+            "Toyota",
+            "Honda",
+            "Nissan",
+            "Mazda",
+            "Subaru"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on foreign-made cars",
+            "Introduction of 'reciprocal tariff' agenda",
+            "Press conference by President Trump"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's 25% Tariff on Non-U.S.-Built Cars",
+        "description": "President Trump announced a 25% tariff on imported vehicles not built in the U.S., effective April 3. This move targets countries with free-trade agreements with the U.S., such as Canada, Mexico, and South Korea, aiming to bolster U.S. national security by supporting domestic automakers. However, it risks violating existing trade agreements and could disrupt global supply chains.",
+        "actors": [
+            "President Donald Trump",
+            "U.S. Government",
+            "Canada",
+            "Mexico",
+            "South Korea",
+            "Japan",
+            "European Union",
+            "Germany",
+            "Italy",
+            "United Kingdom"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariff on non-U.S.-built cars",
+            "Implementation date set for April 3",
+            "Violation of U.S.-Mexico-Canada Agreement and U.S.-South Korea Free Trade Agreement"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's Auto Tariff Policy",
+        "description": "President Trump has announced a 25% tariff on auto imports, aiming to boost domestic manufacturing. The policy is expected to generate $100 billion annually but may increase vehicle prices and affect global supply chains. The tariffs are part of a broader strategy to reshape global trade relations and reduce the U.S. budget deficit.",
+        "actors": [
+            "President Trump",
+            "U.S. Automakers",
+            "Foreign Automakers",
+            "U.S. Consumers",
+            "Economists"
+        ],
+        "trigger_events": [
+            "Announcement of 25% auto import tariff",
+            "Stock market reactions of automakers",
+            "Proposed tax deduction for American-made vehicles",
+            "Hyundai's plan to build a steel plant in Louisiana"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "U.S. Imposes 25% Tariffs on Global Automotive Imports",
+        "description": "In a move to bolster domestic manufacturing, President Trump announced a 25% tariff on global automotive imports to the U.S., effective April 3. This decision is part of a broader strategy to reduce reliance on foreign imports and encourage investment in U.S. manufacturing. The tariffs are expected to significantly impact foreign automakers, particularly those from Japan and South Korea, who export a substantial portion of their vehicles to the U.S. market. The tariffs could increase the average price of a car by up to $10,000, affecting consumer demand and profitability for automakers. The interconnected nature of the global automotive supply chain means the economic repercussions could extend beyond the U.S., impacting economic growth in Asia.",
+        "actors": [
+            "President Trump",
+            "U.S. Government",
+            "Foreign Automakers (Toyota, Nissan, Honda, Hyundai, Kia)",
+            "Moody's Analytics",
+            "Wedbush Securities"
+        ],
+        "trigger_events": [
+            "Announcement of 25% tariffs on global automotive imports",
+            "Scheduled start of tariff collection on April 3",
+            "Hyundai's announcement of $21 billion investment in U.S. manufacturing"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's Auto Tariff Policy",
+        "description": "President Donald Trump has announced a 25% tariff on auto imports, aiming to boost domestic manufacturing. The policy is expected to generate $100 billion annually but may increase costs for automakers reliant on global supply chains. The tariffs could lead to higher vehicle prices, reduced consumer choice, and potential inflation. The policy is part of a broader strategy to reshape global trade relations and reduce the U.S. budget deficit.",
+        "actors": [
+            "Donald Trump",
+            "U.S. Automakers",
+            "Foreign Automakers",
+            "American Automotive Policy Council",
+            "European Union",
+            "Canada",
+            "Mexico"
+        ],
+        "trigger_events": [
+            "Announcement of 25% auto import tariffs",
+            "Trump's re-election based on economic promises",
+            "Global supply chain dependencies",
+            "U.S.-Mexico-Canada trade deal negotiations"
+        ],
+        "cluster_ID": 3
+    },
+    {
+        "scenario_summary_title": "Trump's Auto Tariff Policy",
+        "description": "President Donald Trump announced a 25% tariff on auto imports, aiming to boost domestic manufacturing. The policy is expected to generate $100 billion annually but may increase vehicle prices and reduce consumer choice. The tariffs apply to both finished vehicles and parts, with exceptions for USMCA content. The move is part of a broader strategy to reshape global trade relations and reduce the budget deficit.",
+        "actors": [
+            "President Donald Trump",
+            "U.S. Automakers",
+            "Foreign Automakers",
+            "Canadian Prime Minister Mark Carney",
+            "European Commission President Ursula von der Leyen"
+        ],
+        "trigger_events": [
+            "Announcement of 25% auto import tariffs",
+            "White House's expectation of $100 billion revenue",
+            "Global criticism from foreign leaders",
+            "Potential increase in vehicle prices and inflation"
+        ],
+        "cluster_ID": 3
+    }
+]
