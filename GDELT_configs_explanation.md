@@ -12,33 +12,54 @@ ukraine AND (russia OR moscow OR "Saudi Arabia") AND (Zlelensky OR Zelenskyy OR 
 
 ## 2. GDELT Query Formatting Rules
 
-GDELT accepts queries in a specific format. Follow these guidelines to ensure your queries are valid:
+GDELT queries are built by combining **groups** of alternative search terms. The goal is to ensure that your query clearly specifies alternatives (using OR) and combines independent conditions (using AND) without mixing these operators improperly.
 
-### **Overall Structure:**  
-   - Queries must be composed of two groups connected by an `AND` operator.  
-   - Each group is enclosed in parentheses and contains terms combined using the `OR` operator.
-   - **Valid Example:**  
-     ```
-     (A OR B) AND (C OR "D E")
-     ```
+### **Overall Structure:**
+- **Group Alternatives with OR:**  
+  **ENCLOSE** a set of related or alternative terms within parentheses, **grouping** them with the **OR** operator.  
+  *Example:*  
+  ```
+  (France OR Macron OR Germany)
+  ```
+- **Combine Groups with AND:**  
+  When you need to require that multiple independent conditions are met, join these **groups** with the **AND** operator. Note that **AND should only be used between parentheses**, not inside them.  
+  *Example:*  
+  ```
+  (France OR Macron OR Germany) AND (nuclear OR "nuclear umbrella")
+  ```
+- **Flexibility in Structure:**  
+  While many queries are formed by combining two groups, a query can consist of one or more groups. The key is that within each group, only OR is allowed.
 
-### **Double Quotes Usage:**  
-   - **Only use double quotes for multi-word phrases.**  
-   - Single words should **not** be enclosed in double quotes.  
-   - **Invalid Example:**  
-     ```
-     ("A" OR "B") AND (C OR "D E")
-     ```  
-     Here, "A" and "B" are single words and so it should not be quoted.
+### **General Guideline:**
+- **Enclose Alternatives with Parentheses:**  
+  Always put multiple alternative terms **within parentheses** and separate them with **OR**.
+- **AND Only Outside:**  
+  Use the AND operator only to connect distinct groups of alternatives (parentheses); **do not use it inside any parentheses**.
+- **Double Quotes for Phrases:**  
+  Only wrap multi-word phrases in double quotes. Do not use quotes for single words.
+- **Keep It Clear:**  
+  Think of each parenthetical group as a “bucket” of alternatives. The query will only match records if every “bucket” (each connected by AND) has at least one matching term.
 
-### **Operator Restrictions Within Parentheses:**  
-   - **Only the `OR` operator is allowed inside parentheses.**  
-   - Do not include the `AND` operator within any set of parentheses.
-   - For example, the following is **not allowed**:  
-     ```
-     (A AND B) AND (C OR "D E")
-     ```
+### **Double Quotes Usage:**
+- **Correct Usage:**  
+  Use double quotes to enclose multi-word phrases, e.g., `"nuclear umbrella"`.
+- **Incorrect Usage:**  
+  Do not enclose single words in double quotes.  
+  *Invalid Example:*  
+  ```
+  ("France" OR "Macron") AND (nuclear OR "nuclear umbrella")
+  ```
+  Here, "France" and "Macron" should not be quoted because they are single words.
 
+### **Operator Restrictions Within Parentheses:**
+- **Only OR Allowed:**  
+  Inside any set of parentheses, you should only use the OR operator.  
+- **Avoid Mixing Operators:**  
+  Do not include the AND operator inside parentheses.  
+  *Invalid Example:*  
+  ```
+  (France AND Macron) AND (nuclear OR "nuclear umbrella")
+  ```
 ## 3. Languages (only major languages listed; max 7 at once)
 - English (eng), 
 - Spanish (spa), 
@@ -62,3 +83,4 @@ GDELT accepts queries in a specific format. Follow these guidelines to ensure yo
 - Taiwan (TW)
 - Hong Kong (HK)
 - China (CH)
+
