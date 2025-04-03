@@ -19,6 +19,8 @@ The pipeline performs the following steps:
    - Report covers Historical Context, Recent Developments and Current Impacts & Ramifications 
    - After building the main report, the pipeline generates three potential future scenarios, based on relevant extracted scenarios
 
+![Brief Workflow Visualization](https://github.com/jamesminkyusong/vgeo_mvp_01/blob/main/assets/ss.png)
+
 ---
 ## Set Up
 ### collect.py
