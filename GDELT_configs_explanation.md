@@ -1,3 +1,4 @@
+
 ## 1. Sample Queries
 (France OR Macron OR Germany OR Merz) AND (nuclear OR "nuclear umbrella") AND (Trump OR Russia OR USA OR "United States of America")
 
@@ -28,7 +29,7 @@ GDELT accepts queries in a specific format. Follow these guidelines to ensure yo
      ```
      ("A" OR "B") AND (C OR "D E")
      ```  
-     Here, "A" and "B" are single words and should be unquoted (i.e. `A OR B`).
+     Here, "A" and "B" are single words and so it should not be quoted.
 
 ### **Operator Restrictions Within Parentheses:**  
    - **Only the `OR` operator is allowed inside parentheses.**  
@@ -41,7 +42,7 @@ GDELT accepts queries in a specific format. Follow these guidelines to ensure yo
 ## 3. Languages (only major languages listed; max 7 at once)
 - English (eng), 
 - Spanish (spa), 
-- Chinese (zho), 
+- Chinese (zho), GDELT does not distinguish between mandarin, cantonese, etc 
 - German (deu),
 - French (fra),
 - Korean (kor),
@@ -58,3 +59,6 @@ GDELT accepts queries in a specific format. Follow these guidelines to ensure yo
 - Colombia (CO)
 - Canada (CA)
 - South Korea (KS)
+- Taiwan (TW)
+- Hong Kong (HK)
+- China (CH)
