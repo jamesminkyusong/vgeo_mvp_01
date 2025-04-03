@@ -51,7 +51,7 @@ SCENARIO_DB = /Users/jamessong/Downloads/test/test_1/sc_df.xlsx
 [COLLECT_OUTPUT_PATH]
 EXPORT_PATH=/Users/jamessong/Downloads/test
 ```
-
+**[refer to this documentation for an in depth understanding](https://github.com/jamesminkyusong/vgeo_mvp_01/blob/main/GDELT_configs_explanation.md)**
 ### Explanation:
 - **GDELT_SEARCH_QUERY:** The query string used to search GDELT. Follows simple but specific format. Please refer to `GDELT_configs_explanation`
 - **COUNTRIES & LANGUAGES:** Comma-separated values for filtering the search.
