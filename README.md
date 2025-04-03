@@ -17,7 +17,7 @@ The pipeline performs the following steps:
 **Generation:**  
    - Grounded report based on the collected documents and real-time web searched documents during the report generation workflow
    - Report covers Historical Context, Recent Developments and Current Impacts & Ramifications 
-   - After building the main report, the pipeline generates three potential future scenarios, only based on real-time web searched results
+   - After building the main report, the pipeline generates three potential future scenarios, based on relevant extracted scenarios
 
 ---
 ## Set Up
@@ -78,7 +78,7 @@ EXPORT_PATH=
    - **EXPORT_PATH:** PATH to FOLDER to save final report
 
 ## Running the Pipeline
-Set your root directory as the parent of main and vgeo and run the main generation script with:
+Set your root directory as the parent of `main` and `vgeo`. Then, run the main generation script with:
 
 ```bash
 python main/collect_and_generate.py
