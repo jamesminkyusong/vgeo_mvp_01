@@ -30,6 +30,7 @@ Your section should follow these principles:
 3. **Use Evidence-Based Insights:** Rely on **credible sources** such as government reports, intelligence assessments, policy papers, academic studies, and economic analyses.
 
 **Guidelines for Writing:**
+- Title the following section as ## Historical Context & Recent Developments
 - Provide a clear historical narrative including a timeline, key events, and recent developments.
 - Do not refer to the historical context prior to the 20th century.
 - Write briefly 1-2 sentences on current developments
@@ -56,6 +57,7 @@ Your section should cover these areas extesnively:
 3. **Security Implications:**: Evaluate military posturing, strategic alliances, and defense policies and assess risks of armed conflict, hybrid warfare, cyber threats, and internal instability..
 
 **Guidelines for Writing:**
+- Title the following section as ## Current Impact and Potential Ramifications
 - Structure the section into **concise paragraphs** with clear subheadings.
 - **Avoid speculation**; base conclusions on **historical precedents, policy trends, and expert analyses**.
 - Where relevant, **include quantified data** (GDP impact, trade volume shifts, stock market reactions, policy changes, etc).
@@ -81,7 +83,7 @@ Available report content:
 {context}
 
 For Introduction:
-- Use #for report title (Markdown format)
+- Use # for report title (Markdown format)
 - 50-100 word limit
 - Write in simple and clear language
 - Focus on the core motivation for the report in 1-2 paragraphs
@@ -130,13 +132,9 @@ Your objective is to generate **3 high-probability geopolitical risk & opportuni
 
 {main_topic}
 
-Here is the specific context of what you will be hypothesizing and generating scenarios for: 
-
-{context}
-
 
 When generating 3 geopolitical risk & opportunity scenarios, ensure they:
-1. Cover different aspects of geopolitical risk factors surrounding the {main_topic} (e.g., economical impact, key interactions between key entities, updates in events)
+1. Cover different aspects of geopolitical risk factors based on the context provided in the **general_overview_report** AND **relevant_scenarios**
 2. Relate to specific mentions of terms related to the topic and recent developments.
 3. Look for comparisons or differentiators from similar historical context.
 
@@ -146,6 +144,23 @@ Your Scenarios should be:
 - Geopolitically insightful, capturing the **interplay of nations, policies, economic shifts, and security concerns**.
 - Diverse enough to encompass **regional, global, and sector-specific risk factors**.
 - Focused on authoritative sources (**think tanks, intelligence assessments, policy papers, government reports, academic research, and expert analyses**).
+
+
+Here is the **general_overview_report** regarding the current state of **user's topic**:  
+
+{general_overview_report}
+
+
+Here are the descriptions of clustering IDs for the **relevant_scenarios**:
+
+{cluster_information}
+
+
+And below is the most important, **relevant_scenarios** extracted from recent credible news articles:
+
+{relevant_scenarios}
+
+
 """
 
 scenario_section_instruction_1 = """You are a senior geopolitical risk analyst specializing in forecasting global trade conflicts, economic shifts, and security dynamics.

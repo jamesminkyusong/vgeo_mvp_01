@@ -10,6 +10,7 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('vgeo/collect/collect_internal_settings.ini')
+os.environ['OPENAI_API_KEY']= config['API_KEYS']['OPENAI_API_KEY'].strip()
 os.environ['GOOGLE_API_KEY']= config['API_KEYS']['GOOGLE_API_KEY'].strip()
 
 class ArticleSchema(BaseModel):
@@ -30,6 +31,44 @@ def clean_multiple(results):
     - Maintain the structure with **paragraphs, bullet points, and bold/italic formatting** if present.
     - DO NOT edit or summarize any of the content from the article. Ensure full and complete extraction of the main body of the article.
     - If the input content is not a well scraped article return "No Content"
+    """
+    # Process each document
+    cleaned_results = []
+    for doc in results:
+        if doc is None:
+            cleaned_results.append("")
+            continue
+        try:
+            prompt = f"{clean_md_prompt}\n\n{doc[0]}"
+            result = st_llm.invoke(prompt)
+            cleaned_results.append(result.main_content)
+        except Exception as e:
+            cleaned_results.append("")
+    for n, c in enumerate(cleaned_results):
+        try:
+            if c != "" and len(c) <300:
+                cleaned_results[n] = ""
+            else:
+                pass
+        except:
+            cleaned_results[n]= ""
+    return cleaned_results
+
+
+def clean_and_translate_multiple(results):
+    llm = ChatOpenAI(model="gpt-4o")
+    st_llm = llm.with_structured_output(ArticleSchema)
+    clean_md_prompt = """
+    You are an advanced multilingual translator and an expert document processor. The input is a non-English Markdown news article that contains unnecessary content, advertisements, and web elements.
+
+    Your goal is to extract **only** the **main body** of the article and **translating** the **only** the extracted **main body** section to **English**. 
+
+    **Instructions:**
+    - Keep only the **core article content** (remove headers, footers, sidebars, ads, related news, hyperlinks, comments, and irrelevant navigation).
+    - Maintain the structure with **paragraphs, bullet points, and bold/italic formatting** if present.
+    - DO NOT edit or summarize any of the content from the article. Ensure full and complete extraction and translation of the main body of the article.
+    - If the input content is not a well scraped article containing broken chracters or unrecognizable language, return "No Content", 
+    - Ensure that you translate **ALL** of the extracted **main body** section into English. 
     """
     # Process each document
     cleaned_results = []

@@ -5,6 +5,8 @@ from langchain_core.documents import Document
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from pymilvus import MilvusClient
 from langchain_community.vectorstores import Milvus
+import warnings
+warnings.filterwarnings("ignore")
 
 config = configparser.ConfigParser()
 config.read('vgeo/collect/collect_internal_settings.ini') # need to change path for not running in main
@@ -15,7 +17,7 @@ os.environ['ZILLIZ_CLOUD_USERNAME']= config['API_KEYS']['ZILLIZ_CLOUD_USERNAME']
 os.environ['ZILLIZ_CLOUD_PASSWORD']= config['API_KEYS']['ZILLIZ_CLOUD_PASSWORD'].strip()
 os.environ['ZILLIZ_CLOUD_API_KEY']= config['API_KEYS']['ZILLIZ_CLOUD_API_KEY'].strip()
 
-def load_md_as_doc(md_text, title, seendate, domain, url):
+def load_md_as_doc(md_text, article_id, title, seendate, domain, url):
     """
     Converts Markdown text into LangChain Document objects with metadata.
     Splits text into chunks while tracking character positions.
@@ -34,6 +36,7 @@ def load_md_as_doc(md_text, title, seendate, domain, url):
         split_docs.append(
             Document(
                 metadata={
+                    "article_ID": article_id,
                     "title": title,
                     "seendate": seendate_only,
                     "seentime": seentime,
@@ -58,14 +61,15 @@ def load_all_md_as_docs(df):
     """
     all_docs = []
     for idx, row in df.iterrows():
-        md_text = row['content']  # Assuming cleaned Markdown is in this column
+        article_ID = row['Article_ID']
+        md_text = row['cleaned_content']
         title = row['title']
         seendate = row['seendate']
         seendate = seendate[:8]
         domain = row['domain']
         url = row["url"]
 
-        res = load_md_as_doc(md_text, title, seendate, domain, url)
+        res = load_md_as_doc(md_text, article_ID, title, seendate, domain, url)
         all_docs.extend(res)  # Append all split documents
     return all_docs
 

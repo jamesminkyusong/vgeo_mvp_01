@@ -3,7 +3,11 @@
 
 trump AND (tariff OR trade) AND ("international relations" OR "diplomatic tensions" OR trade) AND (Colombia OR Canada OR China OR EU OR Japan OR Mexico)
 
-ukraine AND (russia OR moscow) AND (Zlelensky OR Zelenskyy OR Putin OR Trump) AND (ceasefire OR "peace talks" OR invasion)
+ukraine AND (russia OR moscow OR "Saudi Arabia") AND (Zlelensky OR Zelenskyy OR Putin OR Trump) AND (ceasefire OR "peace talks" OR invasion)
+
+("European Union" OR EU) AND ("precious minerals" OR "critical minerals" OR "strategic minerals" OR gallium) AND (production OR supply OR demand OR dependecy OR dependant) AND (Greece OR China)
+
+(Russia OR Putin) AND (Arctic OR Svalbard) AND (Norway OR "Norwegian territory") AND ("military presence" OR "territorial claims" OR conflict OR tensions)
 
 ## 2. GDELT Query Formatting Rules
 

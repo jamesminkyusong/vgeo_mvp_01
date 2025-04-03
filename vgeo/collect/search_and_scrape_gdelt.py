@@ -27,7 +27,7 @@ def search_gdelt_queries(q):
     articles_df = articles_df.drop_duplicates(subset='url')
     articles_df['title_norm'] = articles_df['title'].apply(lambda x: remove_non_english(x.lower()))
     articles_df = articles_df.drop_duplicates(subset= 'title_norm')
-    articles_df = articles_df[articles_df['language'] == "English"] 
+    # articles_df = articles_df[articles_df['language'] == "English"] 
     articles_df = articles_df[~articles_df['url'].str.contains('magazine|thestandard|newscentralasia|chinadaily|larouchepub|yahoo|jdsupra|sandiegosun|eurasiareview|insidenova|gdnonline|clutchfans|guide|fool', case=False, na=False)]
     articles_df = articles_df.reset_index(drop=True)
 

@@ -20,22 +20,34 @@ The pipeline performs the following steps:
    - After building the main report, the pipeline generates three potential future scenarios, only based on real-time web searched results
 
 ---
+## Set Up
+### collect.py
 
-## collect.py
-### Set Up
-The pipeline uses INI files to take user input and run with those settings
+The pipeline use the same configuration file inbetween **collect** and **generate** to take user input and run with those settings. 
+Initiating data collection requires adjusting below section of the configuration file `main/generate_settings.ini`
 
 ```ini
-[GDELT_SETTING]
-GDELT_SEARCH_QUERY = (France OR Macron OR Germany OR Merz) AND (nuclear OR "nuclear umbrella" OR "nuclear Defense") AND (Trump OR Russia OR USA OR "United States of America")
-COUNTRIES = US,FR,GM
-LANGUAGES = eng,fra,deu
-S_DATE = 20250311
-E_DATE = 20250311
-MAIN_TOPIC = France_Germany_Nuclear_Defense
+[COLLECT_GDELT_SETTING]
+GDELT_SEARCH_QUERY=trump AND (tariff OR trade) AND ("international relations" OR "diplomatic tensions" OR trade) AND (Colombia OR Canada OR China OR EU OR Japan OR Mexico OR Korea)
 
-[OUTPUT]
-EXPORT_PATH = /Users/jamessong/Downloads/test
+# no space between commas
+COUNTRIES= US,MX,CO,CA,KS,GM 
+LANGUAGES= eng,spa,kor,deu
+
+# YYYYMMDD
+S_DATE = 20250328
+E_DATE = 20250401
+
+# Main topic of the search query for Taxonomy
+MAIN_TOPIC = US_Trump_Trade_Tariff
+
+# Master file to update collected scenarios between calls
+[COLLECT_INPUT_PATH]
+SCENARIO_DB = /Users/jamessong/Downloads/test/test_1/sc_df.xlsx
+
+# Main Folder to save all future outputs
+[COLLECT_OUTPUT_PATH]
+EXPORT_PATH=/Users/jamessong/Downloads/test
 ```
 
 ### Explanation:
@@ -43,103 +55,40 @@ EXPORT_PATH = /Users/jamessong/Downloads/test
 - **COUNTRIES & LANGUAGES:** Comma-separated values for filtering the search.
 - **S_DATE and E_DATE:** Dates in YYYYMMDD format.
 - **MAIN_TOPIC:** A short identifier for the main topic.
-- **EXPORT_PATH:** Directory to save the output CSV file.
+- **SCENARIO_DB:** PATH to EXCEL FILE which we use to save/update scenarios.
+- **EXPORT_PATH:** PATH to FOLDER to save all outputs.
 
-### Running the Pipeline
 
-Set your root directory as the parent of main and vgeo and run the main collection script with:
-
-```bash
-python main/collect.py
-```
-
-The script will:
-- Load the configuration from `main/collect_input.ini`.
-- Search and scrape articles from GDELT.
-- Clean the article content.
-- Generate additional features (sentiment, bias, etc.).
-- Upload the processed articles to Milvus.
-- Generate scenario sections based on the main report.
-- Save the final output as a CSV file named with a timestamp and other metadata.
-
-### Sample Queries
-
-Below are some sample search queries you might use:
-
-1. **Example 1:**
-   ```
-   (France OR Macron OR Germany OR Merz) AND (nuclear OR "nuclear umbrella") AND (Trump OR Russia OR USA OR "United States of America")
-   ```
-
-2. **Example 2:**
-   ```
-   trump AND (tariff OR trade) AND ("international relations" OR "diplomatic tensions" OR trade) AND (Colombia OR Canada OR China OR EU OR Japan OR Mexico)
-   ```
-
-3. **Example 3:**
-   ```
-   ukraine AND (russia OR moscow) AND (Zelensky OR Zelenskyy OR Putin OR Trump) AND (ceasefire OR "peace talks" OR invasion)
-   ```
-
-### Currently Supported Languages & Countries
-
-#### Languages (Max 7 at once)
-- English (eng)
-- Spanish (spa)
-- Chinese (zho)
-- German (deu)
-- French (fra)
-- Korean (kor)
-- Ukrainian (ukr)
-- Russian (rus)
-
-####Countries (Max 7 at once)
-- USA (US)
-- Germany (GM)
-- France (FR)
-- Russia (RS)
-- Ukraine (UP)
-- Mexico (MX)
-- Colombia (CO)
-- Canada (CA)
-- South Korea (KS)
-
-### After Running Collection
-- You should check the folder you specified as EXPORT_PATH in collect_input.ini
-
----
-
-## generate.py
-### Set Up
-The pipeline uses INI files to take user input and run with those settings. It is simpler to configure than `collect_input.ini` as we only have to enter the TOPIC and EXPORT_PATH.
+### generate.py
+It is simpler to configure than collection as we only have to enter the TOPIC. If you need to break up the process between collect and generate, you can pass the paths manually as well.
 
 ```ini
-[API_KEYS]
-OPENAI_API_KEY=
-HF_KEY=
-GOOGLE_API_KEY=
-DEEPSEEK_KEY=
-TAVILY_KEY=
-LANGSMITH_KEY=
-ZILLIZ_CLOUD_URI=
-ZILLIZ_CLOUD_USERNAME=
-ZILLIZ_CLOUD_PASSWORD=
-ZILLIZ_CLOUD_API_KEY=
+[GENERATE_INPUT]
+TOPIC="Trump's US trade and tariff policies in 2025 and potential geopolitical ramifications"
 
-[INPUT] 
-TOPIC="France and Germany's nuclear defense strategy and its geopolitcal ramifications"
-
-[OUTPUT]
-OUT_PATH=/Users/jamessong/Downloads/test/reports
+[GENERATE_CUSTOM_CONFIG]
+CUSTOM_SELECTED_SCENARIO_PATH= 
+EXPORT_PATH=
 ```
 
-### Running the Pipeline
+### Explanation:
+- **TOPIC:** The query string used to initiate the report generation. Usually a short sentence or two to give the LLM a main topic to write about.
+- Leave below blank UNLESS you are running collect.py and generate.py individually (breaking up the integrated collect_and_generate.py).
+   - **CUSTOM_SELECTED_SCENARIO_PATH:** PATH to EXCEL FILE
+   - **EXPORT_PATH:** PATH to FOLDER to save final report
 
+## Running the Pipeline
 Set your root directory as the parent of main and vgeo and run the main generation script with:
 
 ```bash
-python main/generate.py
+python main/collect_and_generate.py
 ```
 
-The script will:
-- Generate and save the report into the specified EXPORT PATH
+Above command will:
+- Automatically load your configurations
+- Collect articles and extract scenarios, resulting in 3 excel files:
+   1. clean articles and generate features 
+   2. extract, standardize and cluster scenarios 
+   3. select few relevant scenarios based of TF-IDF
+
+- Upon completion of collection, it will generate and save the final report into the specified EXPORT PATH

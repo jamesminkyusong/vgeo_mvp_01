@@ -3,6 +3,8 @@ from spacytextblob.spacytextblob import SpacyTextBlob
 import re
 import random
 import markdown
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 countries = [
     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola",
@@ -120,3 +122,58 @@ def convert_to_html(cleaned_results):
         html_text = markdown.markdown(c)
         htmls.append(html_text)
     return htmls
+
+# features for scenarios
+
+def process_actors(cell):
+    if isinstance(cell, list):
+        return ', '.join(cell)
+    elif isinstance(cell, str):
+        return cell
+    else:
+        return str(cell)
+
+def process_description(description):
+    return re.sub(r'[^\x00-\x7F]+', '', description)
+
+
+def tf_idf_scoring(column):
+    # Initialize a TF-IDF Vectorizer
+    vectorizer = TfidfVectorizer(stop_words='english')
+
+    # Fit and transform the "actors_text" column to compute TF-IDF matrix
+    tfidf_actors = vectorizer.fit_transform(column)
+
+    # Create a DataFrame with the TF-IDF scores for each keyword
+    tfidf_df = pd.DataFrame(tfidf_actors.toarray(), columns=vectorizer.get_feature_names_out())
+    return tfidf_df.sum(axis=1)
+
+def compute_tf_idf(df):
+    tf_idf_actors = tf_idf_scoring(df['actors'].apply(process_actors))
+    tf_idf_desc = tf_idf_scoring(df['description'].apply(process_actors))
+    df['tf_idf'] = (tf_idf_actors*0.66)+(tf_idf_desc*0.33)
+    return df
+
+def select_top_secnarios(df):
+    top_sc = []
+    for c in set(df['cluster_ID']):
+        curr_df = df[df['cluster_ID']==c]
+        top_scenarios = curr_df.sort_values(by='tf_idf', ascending=False)
+        top_sc.append(top_scenarios[:3])
+    
+    for n, cdf in enumerate(top_sc):
+        if n==0:
+            fdf = cdf
+        else:
+            fdf = pd.concat([fdf, cdf], ignore_index=True)
+    return fdf
+
+def compute_and_select(df):
+    tf_idf_df = compute_tf_idf(df)
+    selected_df = select_top_secnarios(tf_idf_df)
+    selected_df['BEST'] = ''
+
+    final_scenario_df_column = ["Article_ID", "scenario_summary_title","description","actors","trigger_events","cluster_ID","tf_idf","BEST"]
+    tf_idf_df = tf_idf_df[final_scenario_df_column[:-1]]
+    selected_df =  selected_df[final_scenario_df_column]
+    return tf_idf_df, selected_df

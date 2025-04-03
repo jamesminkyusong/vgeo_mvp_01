@@ -1,4 +1,4 @@
-
+import json
 import asyncio
 
 from tavily import TavilyClient, AsyncTavilyClient
@@ -178,3 +178,18 @@ async def tavily_search_async(search_queries, tavily_topic, tavily_days):
     # Execute all searches concurrently
     search_docs = await asyncio.gather(*search_tasks)
     return search_docs
+
+def format_selected_scenarios(scenario_df):
+    records = scenario_df.to_dict(orient='records')
+    return json.dumps(records, indent=2)
+
+def format_cluster_info(cluster_info_df):
+    cluster_info_df.columns = ['cluster_ID', 'cluster_description']
+    cluster_descriptions = []
+    cluster_info_df
+    for idx, row in cluster_info_df.iterrows():
+        cluster_ID = row['cluster_ID']    
+        desc = row['cluster_description']
+        formatted_txt = f"Cluster_ID: {cluster_ID}, Descrption: {desc}"
+        cluster_descriptions.append(formatted_txt)
+    return ("\n").join(cluster_descriptions)

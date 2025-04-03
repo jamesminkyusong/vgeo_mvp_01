@@ -5,5 +5,4 @@ vgeo/collect/test.ipynb
 vgeo/generate/src/graph.ipynb
 .DS_Store
 vgeo/collect/collect_internal_settings.ini
-main/keywords.ipynb
-
+temp_outputs/
