@@ -15,14 +15,14 @@ ukraine AND (russia OR moscow OR "Saudi Arabia") AND (Zlelensky OR Zelenskyy OR 
 GDELT queries are built by combining **groups** of alternative search terms. The goal is to ensure that your query clearly specifies alternatives (using OR) and combines independent conditions (using AND) without mixing these operators improperly.
 
 ### **General Guideline:**
-- **Enclose Alternatives with Parentheses:**  
+- **Enclose with **Parentheses**, separate with **OR**:**  
   Always put multiple alternative terms **within parentheses** and separate them with **OR**.
-- **AND Only Outside:**  
+- **AND Only Outside of Parentehses:**  
   Use the AND operator only to connect distinct groups of alternatives (parentheses); **do not use it inside any parentheses**.
 - **Double Quotes for Phrases:**  
   Only wrap multi-word phrases in double quotes. Do not use quotes for single words.
 - **Keep It Clear:**  
-  Think of each parenthetical group as a “bucket” of alternatives. The query will only match records if every “bucket” (each connected by AND) has at least one matching term.
+  Think of each parenthetical group as a “bucket” of search terms. The query will only match records if every “bucket” (each connected by AND) has at least one matching term. The buckets can't be nested.
 
 ### **Overall Structure:**
 - **Group Alternatives with OR:**  
