@@ -14,6 +14,16 @@ ukraine AND (russia OR moscow OR "Saudi Arabia") AND (Zlelensky OR Zelenskyy OR 
 
 GDELT queries are built by combining **groups** of alternative search terms. The goal is to ensure that your query clearly specifies alternatives (using OR) and combines independent conditions (using AND) without mixing these operators improperly.
 
+### **General Guideline:**
+- **Enclose Alternatives with Parentheses:**  
+  Always put multiple alternative terms **within parentheses** and separate them with **OR**.
+- **AND Only Outside:**  
+  Use the AND operator only to connect distinct groups of alternatives (parentheses); **do not use it inside any parentheses**.
+- **Double Quotes for Phrases:**  
+  Only wrap multi-word phrases in double quotes. Do not use quotes for single words.
+- **Keep It Clear:**  
+  Think of each parenthetical group as a “bucket” of alternatives. The query will only match records if every “bucket” (each connected by AND) has at least one matching term.
+
 ### **Overall Structure:**
 - **Group Alternatives with OR:**  
   **ENCLOSE** a set of related or alternative terms within parentheses, **grouping** them with the **OR** operator.  
@@ -27,20 +37,18 @@ GDELT queries are built by combining **groups** of alternative search terms. The
   ```
   (France OR Macron OR Germany) AND (nuclear OR "nuclear umbrella")
   ```
-- **Flexibility in Structure:**  
-  While many queries are formed by combining two groups, a query can consist of one or more groups. The key is that within each group, only OR is allowed.
 
-### **General Guideline:**
-- **Enclose Alternatives with Parentheses:**  
-  Always put multiple alternative terms **within parentheses** and separate them with **OR**.
-- **AND Only Outside:**  
-  Use the AND operator only to connect distinct groups of alternatives (parentheses); **do not use it inside any parentheses**.
-- **Double Quotes for Phrases:**  
-  Only wrap multi-word phrases in double quotes. Do not use quotes for single words.
-- **Keep It Clear:**  
-  Think of each parenthetical group as a “bucket” of alternatives. The query will only match records if every “bucket” (each connected by AND) has at least one matching term.
+#### **Operator Restrictions Within Parentheses:**
+- **Only OR Allowed:**  
+  Inside any set of parentheses, you should only use the OR operator.  
+- **Avoid Mixing Operators:**  
+  Do not include the AND operator inside parentheses.  
+  *Invalid Example:*  
+  ```
+  (France AND Macron) AND (nuclear OR "nuclear umbrella")
+  ```
 
-### **Double Quotes Usage:**
+#### **Double Quotes Usage:**
 - **Correct Usage:**  
   Use double quotes to enclose multi-word phrases, e.g., `"nuclear umbrella"`.
 - **Incorrect Usage:**  
@@ -51,15 +59,14 @@ GDELT queries are built by combining **groups** of alternative search terms. The
   ```
   Here, "France" and "Macron" should not be quoted because they are single words.
 
-### **Operator Restrictions Within Parentheses:**
-- **Only OR Allowed:**  
-  Inside any set of parentheses, you should only use the OR operator.  
-- **Avoid Mixing Operators:**  
-  Do not include the AND operator inside parentheses.  
-  *Invalid Example:*  
-  ```
-  (France AND Macron) AND (nuclear OR "nuclear umbrella")
-  ```
+### **GDELT QUERY VALIDATION**
+
+You should always use the [GDELT website](https://gdelt.github.io/#api=doc&query=&contentmode=ArtList&maxrecords=75&timespan=1d) to verify your queries are well formatted before putting it in the excel document (that we use to manage all queries) or updating the configuration document (that will be used to run `collect_and_generate.py`. 
+
+One limitation of the website is that the query can be marked as "too long", but when we run it our backend, as long as the query is well formatted, it should run well. However, we still need to standardize our approach. 
+
+Therefore, the main GDELT Search query should be kept at a length that is accepted by the website.
+
 ## 3. Languages (only major languages listed; max 7 at once)
 - English (eng), 
 - Spanish (spa), 
@@ -84,3 +91,8 @@ GDELT queries are built by combining **groups** of alternative search terms. The
 - Hong Kong (HK)
 - China (CH)
 
+## 5. GDELT WEBSITE VERIFICATION
+
+You should always use the [GDELT website](https://gdelt.github.io/#api=doc&query=&contentmode=ArtList&maxrecords=75&timespan=1d) to verify your queries before putting it in the excel document. One limitation of the website is that the query can be marked as "too long", but when we run it our backend, as long as the query is well formatted, it should run well. Good queries are usually long enough for the website to recognize flag it as "too long". 
+
+Therefore, 
