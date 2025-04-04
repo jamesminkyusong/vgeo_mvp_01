@@ -2,7 +2,7 @@
 ## 1. Sample Queries
 (France OR Macron OR Germany OR Merz) AND (nuclear OR "nuclear umbrella") AND (Trump OR Russia OR USA OR "United States of America")
 
-trump AND (tariff OR trade OR "trade deficit" OR"international relations" OR "diplomatic tensions") AND ("dirty 15" OR Colombia OR India OR Canada OR China OR EU OR Japan OR Mexico OR "South Korea")
+trump AND (tariff OR trade OR "trade deficit" OR "international relations" OR "diplomatic tensions") AND ("dirty 15" OR Colombia OR India OR Canada OR China OR EU OR Japan OR Mexico OR "South Korea")
 
 ukraine AND (russia OR moscow OR "Saudi Arabia") AND (Zlelensky OR Zelenskyy OR Putin OR Trump) AND (ceasefire OR "peace talks" OR invasion)
 
