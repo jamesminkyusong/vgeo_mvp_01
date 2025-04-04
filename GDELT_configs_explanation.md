@@ -3,6 +3,7 @@
 (France OR Macron OR Germany OR Merz) AND (nuclear OR "nuclear umbrella") AND (Trump OR Russia OR USA OR "United States of America")
 
 trump AND (tariff OR trade) AND ("international relations" OR "diplomatic tensions") AND (Colombia OR Canada OR China OR EU OR Japan OR Mexico OR "South Korea")
+
 ukraine AND (russia OR moscow OR "Saudi Arabia") AND (Zlelensky OR Zelenskyy OR Putin OR Trump) AND (ceasefire OR "peace talks" OR invasion)
 
 ("European Union" OR EU) AND ("precious minerals" OR "critical minerals" OR "strategic minerals" OR gallium) AND (production OR supply OR demand OR dependecy OR dependant) AND (Greece OR China)
