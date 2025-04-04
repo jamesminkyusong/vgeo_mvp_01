@@ -63,9 +63,9 @@ GDELT queries are built by combining **groups** of alternative search terms. The
 
 You should always use the [GDELT website](https://gdelt.github.io/#api=doc&query=&contentmode=ArtList&maxrecords=75&timespan=1d) to verify your queries are well formatted before putting it in the excel document (that we use to manage all queries) or updating the configuration document (that is used to run `collect_and_generate.py`. 
 
-One limitation of the website is that the query can be marked as "too long", but when we run it our backend, as long as the query is well formatted, it should run well. However, we still need to standardize our approach. 
+One limitation of the website is that the query can be marked as "too long". This is not an issue when we run it through our backend. However, we still need to standardize our approach.
 
-Therefore, the main GDELT Search query should be kept at a length that is accepted by the website.
+Therefore, GDELT Search queries should be kept at a length that is accepted by the website.
 
 ## 3. Languages (only major languages listed; max 7 at once)
 - English (eng), 
